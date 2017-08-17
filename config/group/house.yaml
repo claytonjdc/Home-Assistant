@@ -1,0 +1,49 @@
+house_climate:
+  name: House Climate
+  entities:
+  - climate.house
+  - binary_sensor.house_thermostat_online
+  - sensor.kitchen_temperature
+  - sensor.house_thermostat_humidity
+
+house_other:
+  name: House Other
+  entities:
+  - sensor.kitchen_light
+  - binary_sensor.kitchen_motion
+
+network:
+  name: Network
+  entities:
+  - sensor.fastcom_download
+  - sensor.speedtest_download
+  - sensor.speedtest_upload
+  - sensor.speedtest_ping
+  - sensor.igd_received_bytes
+  - sensor.igd_sent_bytes
+
+smoke_detector:
+  name: Smoke Detector
+  entities:
+  - binary_sensor.entryway_nest_protect_online
+  - sensor.entryway_nest_protect_co_status
+  - sensor.entryway_nest_protect_smoke_status
+  - sensor.entryway_nest_protect_battery_health
+  - binary_sensor.hallway_nest_protect_online
+  - sensor.hallway_nest_protect_co_status
+  - sensor.hallway_nest_protect_smoke_status
+  - sensor.hallway_nest_protect_battery_health
+  - binary_sensor.upstairs_nest_protect_online
+  - sensor.upstairs_nest_protect_co_status
+  - sensor.upstairs_nest_protect_smoke_status
+  - sensor.upstairs_nest_protect_battery_health
+
+phones:
+  name: Phones
+  entities:
+  - sensor.bones_battery_level
+  - sensor.bones_battery_state
+  - device_tracker.bones
+  - sensor.scotty_battery_level
+  - sensor.scotty_battery_state
+  - device_tracker.scotty

@@ -1,0 +1,32 @@
+default_view:
+  view: yes
+  entities:
+  - device_tracker.bones
+  - device_tracker.scotty
+  - climate.house
+  - scene.everything_off
+  - group.meta_rooms
+
+lights:
+  name: Lights
+  icon: mdi:lightbulb
+  view: yes
+  entities:
+  - group.bedroom
+  - group.dining_room
+  - group.hallway
+  - group.kitchen
+  - group.living_room_lamp
+  - group.living_room
+  - group.office
+
+house:
+  name: House
+  icon: mdi:home-modern
+  view: yes
+  entities:
+  - group.house_climate
+  - group.house_other
+  - group.network
+  - group.smoke_detector
+  - group.phones

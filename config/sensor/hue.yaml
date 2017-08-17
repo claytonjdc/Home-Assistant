@@ -1,0 +1,11 @@
+- platform: rest
+  resource: !secret hue_kitchen_light
+  value_template: '{{ value_json.state.lightlevel }}'
+  unit_of_measurement: Lux
+  name: 'Kitchen Light'
+
+- platform: rest
+  resource: !secret hue_kitchen_temperature
+  value_template: '{{ value_json.state.temperature | float / 100 }}'
+  unit_of_measurement: °C
+  name: 'Kitchen Temperature'

@@ -1,0 +1,46 @@
+homeassistant:
+  name: Home
+  latitude: 50.2601751
+  longitude: -5.089021499999944
+  elevation: 110
+  unit_system: metric
+  time_zone: Europe/London
+
+http:
+  # Uncomment this to add a password (recommended!)
+  api_password: !secret hass_password
+  # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
+  base_url: hass15wsw.duckdns.org:8123
+  trusted_networks:
+  - 127.0.0.1
+  - 192.168.0.0/24
+  - 10.0.1.0/24
+
+
+# Enablers
+config:
+conversation:
+discovery:
+frontend:
+ios:
+logbook:
+sun:
+updater:
+  include_used_components: true
+
+
+history:
+recorder:
+  purge_days: 7
+
+
+# Text to speech
+tts:
+  - platform: google
+
+automation: !include automations.yaml
+binary_sensor: !include_dir_merge_list binary_sensor
+group: !include_dir_merge_named group
+light: !include lights.yaml
+nest: !include nest.yaml
+sensor: !include_dir_merge_list sensor

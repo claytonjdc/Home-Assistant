@@ -1,0 +1,3 @@
+- platform: hue
+  allow_unreachable: true
+  allow_hue_groups: true

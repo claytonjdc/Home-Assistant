@@ -1,0 +1,58 @@
+bedroom:
+  name: Bedroom
+  icon: mdi:hotel
+  entities:
+  - light.master_bedroom
+  - light.bedroom
+
+dining_room:
+  name: Dining Room
+  icon: mdi:silverware-variant
+  entities:
+  - light.dining_room
+  - light.dining_room_2
+
+hallway:
+  name: Hallway
+  icon: mdi:ceiling-light
+  entities:
+  - light.hallway
+  - light.entryway
+  - light.middle_landing
+  - light.top_landing
+
+kitchen:
+  name: Kitchen
+  icon: mdi:food-variant
+  entities:
+  - light.kitchen
+  - light.spot_1
+  - light.spot_2
+  - light.spot_3
+  - light.spot_4
+  - light.spot_5
+  - light.spot_6
+  - light.coffee
+
+living_room_lamp:
+  name: Living Room Lamp
+  icon: mdi:lava-lamp
+  entities:
+  - light.ikea_lamp_1
+  - light.ikea_lamp_2
+  - light.ikea_lamp_3
+
+living_room:
+  name: Living Room
+  icon: mdi:sofa
+  entities:
+  - group.living_room_lamp
+  - light.living_room
+  - light.living_room_overhead
+
+office:
+  name: Office
+  icon: mdi:desktop-mac
+  entities:
+  - light.office
+  - light.office_2
