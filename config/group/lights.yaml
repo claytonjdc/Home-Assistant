@@ -21,7 +21,7 @@ hallway:
   - light.middle_landing
   - light.top_landing
 
-kitchen:
+kitchen_lights:
   name: Kitchen
   icon: mdi:food-variant
   entities:
@@ -42,7 +42,7 @@ living_room_lamp:
   - light.ikea_lamp_2
   - light.ikea_lamp_3
 
-living_room:
+living_room_lights:
   name: Living Room
   icon: mdi:sofa
   entities:

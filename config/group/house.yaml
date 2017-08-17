@@ -38,8 +38,8 @@ smoke_detector:
   - sensor.upstairs_nest_protect_smoke_status
   - sensor.upstairs_nest_protect_battery_health
 
-phones:
-  name: Phones
+devices:
+  name: Devices
   entities:
   - sensor.bones_battery_level
   - sensor.bones_battery_state
@@ -47,3 +47,6 @@ phones:
   - sensor.scotty_battery_level
   - sensor.scotty_battery_state
   - device_tracker.scotty
+  - sensor.chekov_battery_level
+  - sensor.chekov_battery_state
+  - device_tracker.chekov

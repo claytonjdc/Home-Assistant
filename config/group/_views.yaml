@@ -2,7 +2,8 @@ default_view:
   view: yes
   entities:
   - device_tracker.bones
-  - device_tracker.scotty
+  - sensor.scotty_battery_level
+  - sensor.chekov_battery_level
   - climate.house
   - scene.everything_off
   - group.meta_rooms
@@ -15,10 +16,38 @@ lights:
   - group.bedroom
   - group.dining_room
   - group.hallway
-  - group.kitchen
+  - group.kitchen_lights
   - group.living_room_lamp
-  - group.living_room
+  - group.living_room_lights
   - group.office
+
+media:
+  name: Media
+  icon: mdi:movie
+  view: yes
+  entities:
+  - group.speakers
+  - group.tv
+
+kitchen:
+  name: Kitchen
+  icon: mdi:food-variant
+  view: yes
+  entities:
+  - sensor.kitchen_temperature
+  - binary_sensor.kitchen_motion
+  - group.kitchen_lights
+  - media_player.kitchen
+
+
+living_room:
+  name: Living Room
+  icon: mdi:sofa
+  view: yes
+  entities:
+  - group.living_room_lights
+  - group.tv
+  - media_player.living_room
 
 house:
   name: House
@@ -29,4 +58,4 @@ house:
   - group.house_other
   - group.network
   - group.smoke_detector
-  - group.phones
+  - group.devices
