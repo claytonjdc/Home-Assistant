@@ -42,6 +42,8 @@ tts:
 automation: !include automations.yaml
 binary_sensor: !include_dir_merge_list binary_sensor
 group: !include_dir_merge_named group
+input_select: !include_dir_merge_named input_select
 light: !include lights.yaml
 nest: !include nest.yaml
+remote: !include_dir_merge_list remote
 sensor: !include_dir_merge_list sensor

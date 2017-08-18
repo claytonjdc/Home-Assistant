@@ -46,6 +46,7 @@ living_room:
   view: yes
   entities:
   - group.living_room_lights
+  - group.living_room_activities
   - group.tv
   - media_player.living_room
 

@@ -1,0 +1,9 @@
+living_room_tv:
+  name: Living Room TV
+  options:
+    - Power Off
+    - Watch TV
+    - Watch Apple TV
+    - Play PS4
+  initial: Power Off
+  icon: mdi:television

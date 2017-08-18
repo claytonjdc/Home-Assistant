@@ -1,0 +1,4 @@
+- platfrom: harmony
+  name: Living Room TV
+  activity: 25985381 # Watch TV Activity
+  scan_interval: 5
