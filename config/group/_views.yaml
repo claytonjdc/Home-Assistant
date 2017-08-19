@@ -50,6 +50,7 @@ living_room:
   - group.tv
   - media_player.living_room
 
+
 house:
   name: House
   icon: mdi:home-modern
