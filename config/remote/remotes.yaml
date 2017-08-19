@@ -1,4 +1,4 @@
-- platfrom: harmony
+- platform: harmony
   name: Harmony Hub
   activity: 25985381 # Watch TV Activity
   scan_interval: 5
