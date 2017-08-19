@@ -19,6 +19,5 @@ hass-restart:
 secrets:
 	cp ./config/secrets.yaml.sample ./config/secrets.yaml
 
-
 reset-nest:
 	ssh ${USER}@${IP} "sudo rm /home/homeassistant/.homeassistant/nest.con"

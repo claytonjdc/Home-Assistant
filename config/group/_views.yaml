@@ -28,6 +28,14 @@ kitchen:
   - group.kitchen_lights
   - media_player.kitchen
 
+bedroom:
+  name: Bedroom
+  icon: mdi:hotel
+  view: yes
+  entities:
+    - light.master_bedroom
+    - media_player.bedroom
+
 lights:
   name: Lights
   icon: mdi:lightbulb
