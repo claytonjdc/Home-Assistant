@@ -46,8 +46,8 @@ living_room_lights:
   name: Living Room
   icon: mdi:sofa
   entities:
-  - group.living_room_lamp
   - light.living_room
+  - group.living_room_lamp
   - light.living_room_overhead
 
 office:
