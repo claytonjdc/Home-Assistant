@@ -1,5 +1,5 @@
 - platform: template
   sensors:
-    living_room_tv:
-      value_template: '{{ states.remote.living_room_tv.attributes.current_activity }}'
+    harmomy_hub:
+      value_template: '{{ states.remote.harmony_hub.attributes.current_activity }}'
       friendly_name: 'Living Room TV'

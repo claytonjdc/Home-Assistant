@@ -1,4 +1,4 @@
-- platfrom: harmony_hub
-  name: Living Room TV
+- platfrom: harmony
+  name: Harmony Hub
   activity: 25985381 # Watch TV Activity
   scan_interval: 5
