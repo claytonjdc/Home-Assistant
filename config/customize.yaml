@@ -11,7 +11,7 @@ light.living_room:
   icon: mdi:lightbulb-outline
 
 light.master_bedroom:
-  icong: mdi:lightbulb-outline
+  icon: mdi:lightbulb-outline
 
 light.office:
   icon: mdi:lightbulb-outline

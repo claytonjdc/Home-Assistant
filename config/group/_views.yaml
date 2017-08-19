@@ -26,7 +26,7 @@ media:
   icon: mdi:movie
   view: yes
   entities:
-  - group.speakers
+  - group.sonos
   - group.tv
 
 kitchen:
@@ -47,8 +47,8 @@ living_room:
   entities:
   - group.living_room_lights
   - group.living_room_activities
-  - group.tv
   - media_player.living_room
+  - group.tv
 
 
 house:

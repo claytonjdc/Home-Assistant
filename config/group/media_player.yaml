@@ -1,4 +1,4 @@
-speakers:
+sonos:
   name: Sonos
   icon: mdi:speaker
   entities:
