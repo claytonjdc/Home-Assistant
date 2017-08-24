@@ -6,7 +6,7 @@
   - service: remote.turn_on
     data_template:
       entity_id: remote.harmony_hub
-      activity: '{{ states.input_select.living_room_tv.state }}'
+      activity: '{{ states.input_select.harmony_hub.state }}'
 
 - alias: "Harmony Update Activity Select"
   trigger:
@@ -19,4 +19,4 @@
   - service: input_select.select_option
     data_template:
       entity_id: input_select.harmony_hub
-      option: '{{ states.sensor.living_room_tv.state }}'
+      option: '{{ states.sensor.harmony_hub.state }}'
