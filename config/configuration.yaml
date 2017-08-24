@@ -47,3 +47,4 @@ light: !include lights.yaml
 nest: !include nest.yaml
 remote: !include_dir_merge_list remote
 sensor: !include_dir_merge_list sensor
+switch: !include_dir_merge_list switch

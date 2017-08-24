@@ -5,5 +5,5 @@ living_room_tv:
     - Watch TV
     - Watch Apple TV
     - Play PS4
-  initial: Power Off
+  initial: Watch TV
   icon: mdi:television
