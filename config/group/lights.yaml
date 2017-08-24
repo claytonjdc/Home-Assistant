@@ -1,4 +1,4 @@
-bedroom:
+bedroom_lights:
   name: Bedroom
   icon: mdi:hotel
   entities:

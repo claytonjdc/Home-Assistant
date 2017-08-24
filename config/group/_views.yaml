@@ -7,6 +7,7 @@ default_view:
   - climate.house
   - scene.everything_off
   - group.meta_rooms
+  - group.short_weather
 
 living_room:
   name: Living Room
@@ -33,15 +34,15 @@ bedroom:
   icon: mdi:hotel
   view: yes
   entities:
-    - light.master_bedroom
     - media_player.bedroom
+    - light.master_bedroom
 
 lights:
   name: Lights
   icon: mdi:lightbulb
   view: yes
   entities:
-  - group.bedroom
+  - group.bedroom_lights
   - group.dining_room
   - group.hallway
   - group.kitchen_lights
