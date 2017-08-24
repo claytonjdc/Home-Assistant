@@ -3,4 +3,4 @@ living_room_activities:
   icon: mdi:sofa
   entities:
   - remote.harmony_hub
-  - input_select.living_room_tv
+  - input_select.harmony_hub
