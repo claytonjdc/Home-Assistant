@@ -1,14 +1,14 @@
 - platform: template
   switches:
-    living_room_tv:
+    harmony_hub:
       friendly_name: Living Room TV
-      value_template: '{{ states.sensor.living_room_tv.state != "PowerOff" }}'
-      entity_id: sensor.living_room_tv
+      value_template: '{{ states.sensor.harmony_hub.state != "PowerOff" }}'
+      entity_id: sensor.harmony_hub
       turn_on:
         service:  remote.turn_on
         data_template:
-          entity_id: remote.living_room_tv
-          activity: '{{ states.input_select.living_room_tv.state }}'
+          entity_id: remote.harmony_hub
+          activity: '{{ states.input_select.harmony_hub.state }}'
       turn_off:
         service: remote.turn_off
-        entity_id: remote.living_room_tv
+        entity_id: remote.harmony_hub
