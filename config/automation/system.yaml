@@ -1,0 +1,35 @@
+- alias: Startup Notification
+  trigger:
+    platform: homeassistant
+    event: start
+  action:
+    service: notify.ios_bones
+    data:
+      message: 'Home Assistant back online!'
+
+- alias: Shutdown Notification
+  trigger:
+    platform: homeassistant
+    event: shutdown
+  action:
+    service: notify.ios_bones
+    data:
+      message: 'Home Assistant is going down!'
+
+- alias: Update notifications
+  trigger:
+    - platform: state
+      entity_id: updater.updater
+  action:
+    service: notify.ios_bones
+    data:
+      message: 'There is a new Home Assistant release available.'
+
+- alias: Travis Build Status
+  trigger:
+  - platform: state
+    entity_id: sensor.travis_build_status
+  action:
+    service: notify.ios_bones
+    data:
+      message: 'Travis build status: {{ states.sensor.travis_build_status.state }}'
