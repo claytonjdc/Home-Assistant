@@ -3,8 +3,8 @@ meta_rooms:
   icon: mdi:home-variant
   entities:
   - group.bedroom_lights
-  - group.dining_room
-  - group.hallway
+  - group.dining_room_lights
+  - group.hallway_lights
   - group.kitchen_lights
   - group.living_room_lamp
-  - group.office
+  - group.office_lights

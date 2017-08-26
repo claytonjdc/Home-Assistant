@@ -5,14 +5,14 @@ bedroom_lights:
   - light.master_bedroom
   - light.bedroom
 
-dining_room:
+dining_room_lights:
   name: Dining Room
   icon: mdi:silverware-variant
   entities:
   - light.dining_room
   - light.dining_room_2
 
-hallway:
+hallway_lights:
   name: Hallway
   icon: mdi:ceiling-light
   entities:
@@ -50,7 +50,7 @@ living_room_lights:
   - group.living_room_lamp
   - light.living_room_overhead
 
-office:
+office_lights:
   name: Office
   icon: mdi:desktop-mac
   entities:
