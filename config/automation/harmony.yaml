@@ -14,9 +14,9 @@
     entity_id: sensor.harmony_hub
   condition:
     condition: template
-    value_template: '{{ states.sensor.harmony_hub.state != "PowerOff" and states.sensor.harmony_hub.state != "None" }}'
+    value_template: '{{ states.remote.harmony_hub.attributes.current_activity != "PowerOff" and states.remote.harmony_hub.attributes.current_activity != "None" }}'
   action:
   - service: input_select.select_option
     data_template:
       entity_id: input_select.harmony_hub
-      option: '{{ states.sensor.harmony_hub.state }}'
+      option: '{{ states.remote.harmony_hub.attributes.current_activity }}'
