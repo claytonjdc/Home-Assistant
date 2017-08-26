@@ -46,5 +46,6 @@ input_select: !include_dir_merge_named input_select
 light: !include lights.yaml
 nest: !include nest.yaml
 remote: !include_dir_merge_list remote
+scene: !include_dir_merge_list scene
 sensor: !include_dir_merge_list sensor
 switch: !include_dir_merge_list switch
