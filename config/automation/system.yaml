@@ -5,7 +5,7 @@
   action:
     service: notify.ios_bones
     data:
-      message: 'Home Assistant has been restored'
+      message: 'J.A.R.V.I.S is online'
 
 - alias: Shutdown Notification
   trigger:
@@ -14,7 +14,7 @@
   action:
     service: notify.ios_bones
     data:
-      message: 'Home Assistant is going down'
+      message: 'J.A.R.V.I.S is offline'
 
 - alias: Update notifications
   trigger:

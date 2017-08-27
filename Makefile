@@ -16,6 +16,12 @@ hass-check:
 hass-restart:
 	ssh ${USER}@${IP} "hassio homeassistant restart"
 
+get-backup:
+		scp -rp ${USER}@${IP}:/backup/* ./backup/
+
+put-backup:
+		scp -rp ./backup/* ${USER}@${IP}:/backup/
+
 secrets:
 	cp ./config/secrets.yaml.sample ./config/secrets.yaml
 
