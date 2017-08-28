@@ -49,6 +49,7 @@ living_room_lights:
   - light.living_room
   - group.living_room_lamp
   - light.living_room_overhead
+  - switch.hyperion
 
 office_lights:
   name: Office

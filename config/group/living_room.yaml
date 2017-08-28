@@ -4,3 +4,12 @@ living_room_activities:
   entities:
   - switch.harmony_hub
   - input_select.harmony_hub
+
+living_room_tv:
+  name: TV
+  icon: mdi:television
+  entities:
+  - switch.harmony_hub
+  - input_select.harmony_hub
+  - switch.hyperion
+  - input_select.hyperion_effect

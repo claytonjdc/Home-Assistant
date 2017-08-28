@@ -1,3 +1,6 @@
+switch.hyperion:
+  icon: mdi:square-inc
+
 light.dining_room:
   icon: mdi:lightbulb-outline
 
