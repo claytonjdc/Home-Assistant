@@ -18,7 +18,7 @@ living_room:
   - group.living_room_lights
   - group.living_room_activities
   - media_player.living_room
-  - group.tv
+  - group.living_room_tv
 
 kitchen:
   name: Kitchen

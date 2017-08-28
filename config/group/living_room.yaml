@@ -13,3 +13,5 @@ living_room_tv:
   - input_select.harmony_hub
   - switch.hyperion
   - input_select.hyperion_effect
+  - media_player.apple_tv
+  - remote.apple_tv
