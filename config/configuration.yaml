@@ -48,5 +48,6 @@ nest: !include nest.yaml
 remote: !include_dir_merge_list remote
 scene: !include_dir_merge_list scene
 script: !include_dir_merge_list script
+shell_command: !include_dir_merge_named shell_command
 sensor: !include_dir_merge_list sensor
 switch: !include_dir_merge_list switch

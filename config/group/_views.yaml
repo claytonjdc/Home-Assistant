@@ -16,9 +16,8 @@ living_room:
   view: yes
   entities:
   - group.living_room_lights
-  - group.living_room_activities
-  - media_player.living_room
   - group.living_room_tv
+  - media_player.living_room
 
 kitchen:
   name: Kitchen
