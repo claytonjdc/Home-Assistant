@@ -1,6 +1,3 @@
-switch.hyperion:
-  icon: mdi:camcorder-box
-
 light.dining_room:
   icon: mdi:lightbulb-outline
 
@@ -18,3 +15,9 @@ light.master_bedroom:
 
 light.office:
   icon: mdi:lightbulb-outline
+
+switch.harmony_hub:
+  icon: mdi:television
+
+switch.hyperion:
+    icon: mdi:camcorder-box
