@@ -45,7 +45,7 @@
 #               entity_id: switch.hyperion
 #           {% endif %}
 
-- alias: Hyperion Auto
+- alias: Hyperion Auto Off
   trigger:
     platform: template
     value_template: >
