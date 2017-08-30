@@ -16,7 +16,7 @@
 
 - alias: Hyperion Auto On
   trigger:
-  - platform: template
+    platform: template
     value_template: >
       {{ not is_state('sensor.harmony_hub', 'Watch TV')
       and not is_state('sensor.harmony_hub', 'PowerOff')
