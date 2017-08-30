@@ -48,7 +48,7 @@
 - automation:
     trigger:
       platform: template
-      value_template: {% is_state('sensor.harmony_hub', 'Watch TV') or is_state('sensor.harmony_hub', 'PowerOff') %}
+      value_template: {{ is_state('sensor.harmony_hub', 'Watch TV') or is_state('sensor.harmony_hub', 'PowerOff') }}
     action:
       service: switch.turn_off
       entity_id: switch.hyperion
