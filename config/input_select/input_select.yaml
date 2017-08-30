@@ -10,7 +10,7 @@ harmony_hub:
 
 hyperion_effect:
   name: TV Ambilight Effect
-  icon: mdi:square-inc
+  icon: mdi:camcorder-box
   options:
   - "None"
   - "Knight rider"
