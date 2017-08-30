@@ -5,7 +5,7 @@
       value_template: '{{ states.sensor.harmony_hub.state != "PowerOff" }}'
       entity_id: sensor.harmony_hub
       turn_on:
-        service:  remote.turn_on
+        service: remote.turn_on
         data_template:
           entity_id: remote.harmony_hub
           activity: '{{ states.input_select.harmony_hub.state }}'

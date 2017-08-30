@@ -7,4 +7,5 @@ meta_rooms:
   - group.hallway_lights
   - group.kitchen_lights
   - group.living_room_lamp
+  - switch.hyperion
   - group.office_lights

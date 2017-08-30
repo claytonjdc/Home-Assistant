@@ -5,7 +5,6 @@ default_view:
   - sensor.scotty_battery_level
   - sensor.chekov_battery_level
   - climate.house
-  - scene.everything_off
   - group.meta_rooms
   - group.short_weather
   - scene.indie_chillout
