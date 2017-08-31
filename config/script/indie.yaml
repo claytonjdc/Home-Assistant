@@ -1,37 +1,36 @@
-script:
-  indie:
-    alias: "Bedroom & Kitchen Indie Chillout"
-    sequence:
+indie:
+  alias: "Bedroom & Kitchen Indie Chillout"
+  sequence:
 #
-      - service: homeassistant.turn_off
-        entity_id: script.indie
+    - service: homeassistant.turn_off
+      entity_id: script.indie
 #
-      - service: media_player.sonos_snapshot
+    - service: media_player.sonos_snapshot
+      entity_id:
+        - media_player.sonos_bedroom
+        - media_player.sonos_kitchen
+#
+    - service: media_player.sonos_unjoin
+      entity_id:
+        - media_player.sonos_bedroom
+        - media_player.sonos_kitchen
+#
+    - service: media_player.sonos_join
+      data:
+        master: media_player.sonos_bedroom
+      entity_id:
+        - media_player.sonos_kitchen
+#
+    - service: media_player.volume_set
+      entity_id:
+        - media_player.sonos_bedroom
+        - media_player.sonos_kitchen
+      data:
+        volume_level: 0.8
+#
+    - service: media_player.select_source
+      data_template:
         entity_id:
           - media_player.sonos_bedroom
-          - media_player.sonos_kitchen
-#
-      - service: media_player.sonos_unjoin
-        entity_id:
-          - media_player.sonos_bedroom
-          - media_player.sonos_kitchen
-#
-      - service: media_player.sonos_join
-        data:
-          master: media_player.sonos_bedroom
-        entity_id:
-          - media_player.sonos_kitchen
-#
-      - service: media_player.volume_set
-        entity_id:
-          - media_player.sonos_bedroom
-          - media_player.sonos_kitchen
-        data:
-          volume_level: 0.8
-#
-      - service: media_player.select_source
-        data_template:
-          entity_id:
-            - media_player.sonos_bedroom
-          media_content_id: 'Indie Chillout'
-          media_content_type: playlist
+        media_content_id: 'Indie Chillout'
+        media_content_type: playlist
