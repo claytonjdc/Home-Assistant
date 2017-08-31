@@ -16,14 +16,23 @@
 
 - alias: Hyperion Auto On
   trigger:
-    platform: template
-    value_template: >
-      {{ not is_state('sensor.harmony_hub', 'PowerOff')
-      and not is_state('sensor.harmony_hub', 'Watch TV')
-      }}
+  - platform: state
+    entity_id: sensor.harmony_hub
+    from: "PowerOff"
   action:
     service: switch.turn_on
     entity_id: switch.hyperion
+
+# - alias: Hyperion Auto On
+#   trigger:
+#     platform: template
+#     value_template: >
+#       {{ not is_state('sensor.harmony_hub', 'PowerOff')
+#       and not is_state('sensor.harmony_hub', 'Watch TV')
+#       }}
+#   action:
+#     service: switch.turn_on
+#     entity_id: switch.hyperion
 
 - alias: Hyperion Auto Off
   trigger:

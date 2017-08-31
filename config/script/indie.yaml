@@ -29,9 +29,9 @@ script:
         data:
           volume_level: 0.8
 #
-      - service: media_player.play_media
+      - service: media_player.select_source
         data_template:
           entity_id:
             - media_player.sonos_bedroom
-          media_content_id: Indie Chillout
+          media_content_id: 'Indie Chillout'
           media_content_type: playlist
