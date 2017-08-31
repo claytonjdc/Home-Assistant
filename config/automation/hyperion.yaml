@@ -18,9 +18,8 @@
   trigger:
     platform: template
     value_template: >
-      {{ not (is_state('sensor.harmony_hub', 'Watch TV')
-      and is_state('sensor.harmony_hub', 'PowerOff')
-      )
+      {{ is_state('sensor.harmony_hub', 'Play PS4')
+      or is_state('sensor.harmony_hub', 'Watch Apple TV')
       }}
   action:
     service: switch.turn_on
