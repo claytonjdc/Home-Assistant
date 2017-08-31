@@ -1,0 +1,134 @@
+# Total TV Watched
+- platform: history_stats
+  name: Total TV Watched Last Week
+  entity_id: switch.harmony_hub
+  state: 'on'
+  start: >
+    {{ as_timestamp(
+        now().replace(hour=0).replace(minute=0).replace(second=0)
+      ) - (now().weekday() + 7) * 86400
+    }}
+  end: >
+    {{ as_timestamp(
+        now().replace(hour=0).replace(minute=0).replace(second=0)
+      ) - now().weekday() * 86400
+    }}
+
+- platform: history_stats
+  name: Total TV Watched This Week
+  entity_id: switch.harmony_hub
+  state: 'on'
+  start: >
+    {{ as_timestamp(
+        now().replace(hour=0).replace(minute=0).replace(second=0)
+      ) - now().weekday() * 86400
+    }}
+  end: '{{ now() }}'
+
+#  TV Watched
+- platform: history_stats
+  name: TV Watched Last Week
+  entity_id: sensor.harmony_hub
+  state: 'Watch TV'
+  start: >
+    {{ as_timestamp(
+        now().replace(hour=0).replace(minute=0).replace(second=0)
+      ) - (now().weekday() + 7) * 86400
+    }}
+  end: >
+    {{ as_timestamp(
+        now().replace(hour=0).replace(minute=0).replace(second=0)
+      ) - now().weekday() * 86400
+    }}
+
+- platform: history_stats
+  name: TV Watched This Week
+  entity_id: sensor.harmony_hub
+  state: 'Watch TV'
+  start: >
+    {{ as_timestamp(
+        now().replace(hour=0).replace(minute=0).replace(second=0)
+      ) - now().weekday() * 86400
+    }}
+  end: '{{ now() }}'
+
+# Apple TV
+- platform: history_stats
+  name: Apple TV Watched Last Week
+  entity_id: sensor.harmony_hub
+  state: 'Watch Apple TV'
+  start: >
+    {{ as_timestamp(
+        now().replace(hour=0).replace(minute=0).replace(second=0)
+      ) - (now().weekday() + 7) * 86400
+    }}
+  end: >
+    {{ as_timestamp(
+        now().replace(hour=0).replace(minute=0).replace(second=0)
+      ) - now().weekday() * 86400
+    }}
+
+- platform: history_stats
+  name: Apple TV Watched This Week
+  entity_id: sensor.harmony_hub
+  state: 'Watch Apple TV'
+  start: >
+    {{ as_timestamp(
+        now().replace(hour=0).replace(minute=0).replace(second=0)
+      ) - now().weekday() * 86400
+    }}
+  end: '{{ now() }}'
+
+# # Music
+# - platform: history_stats
+#   name: Music Listened To Last Week
+#   entity_id: media_player.speakers
+#   state: 'playing'
+#   start: >
+#     {{ as_timestamp(
+#         now().replace(hour=0).replace(minute=0).replace(second=0)
+#       ) - (now().weekday() + 7) * 86400
+#     }}
+#   end: >
+#     {{ as_timestamp(
+#         now().replace(hour=0).replace(minute=0).replace(second=0)
+#       ) - now().weekday() * 86400
+#     }}
+
+# - platform: history_stats
+#   name: Music Listened To This Week
+#   entity_id: media_player.speakers
+#   state: 'playing'
+#   start: >
+#     {{ as_timestamp(
+#         now().replace(hour=0).replace(minute=0).replace(second=0)
+#       ) - now().weekday() * 86400
+#     }}
+#   end: '{{ now() }}'
+#
+# # PlayStation 4
+# - platform: history_stats
+#   name: PlayStation 4 Played Last Week
+#   entity_id: switch.playstation_4
+#   state: 'on'
+#   start: >
+#     {{ as_timestamp(
+#         now().replace(hour=0).replace(minute=0).replace(second=0)
+#       ) - (now().weekday() + 7) * 86400
+#     }}
+#   end: >
+#     {{ as_timestamp(
+#         now().replace(hour=0).replace(minute=0).replace(second=0)
+#       ) - now().weekday() * 86400
+#     }}
+#
+# - platform: history_stats
+#   name: PlayStation 4 Played This Week
+#   entity_id: switch.playstation_4
+#   state: 'on'
+#   start: >
+#     {{ as_timestamp(
+#         now().replace(hour=0).replace(minute=0).replace(second=0)
+#       ) - now().weekday() * 86400
+#     }}
+#   end: '{{ now() }}'
