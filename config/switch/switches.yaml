@@ -2,7 +2,10 @@
   switches:
     harmony_hub:
       friendly_name: Living Room TV
-      value_template: '{{ states.sensor.harmony_hub.state != "PowerOff" }}'
+      value_template: >
+        {{ states.sensor.harmony_hub.state != "PowerOff"
+        and
+        states.binary_sensor.harmony_hub.state != "off" }}
       entity_id: sensor.harmony_hub
       turn_on:
         service: remote.turn_on
