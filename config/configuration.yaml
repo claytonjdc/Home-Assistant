@@ -24,15 +24,15 @@ conversation:
 discovery:
 frontend:
 ios:
-logbook:
 sun:
 updater:
   include_used_components: true
 
 
+recorder: !include recorder.yaml
 history:
-recorder:
-  purge_days: 14
+logbook:
+
 
 
 # Text to speech
