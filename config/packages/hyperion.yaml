@@ -20,23 +20,18 @@ hyperion:
 
   - alias: Hyperion Auto On
     trigger:
-     platform: template
-     value_template: >
-       {{ states.input_select.hyperion_effect.state != 'PowerOff'
-       and states.input_select.hyperion_effect.state != 'Watch TV'
-       }}
+      platform: state
+      entity_id: binary_sensor.living_room_hdmi
+      to: "On"
     action:
     - service: switch.turn_on
       entity_id: switch.hyperion
 
   - alias: Hyperion Auto Off
     trigger:
-      platform: template
-      value_template: >
-        {{ states.input_select.hyperion_effect.state == 'PowerOff'
-        or states.input_select.hyperion_effect.state == 'Watch TV'
-        }}
-      to: "PowerOff"
+      platform: state
+      entity_id: binary_sensor.living_room_hdmi
+      to: "Off"
     action:
     - service: switch.turn_off
       entity_id: switch.hyperion
