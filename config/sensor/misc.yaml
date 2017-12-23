@@ -1,14 +1,3 @@
-- platform: template
-  sensors:
-    harmony_hub:
-      value_template: >
-        {% if is_state("binary_sensor.harmony_hub.state", "off") -%}
-          PowerOff
-        {%- else -%}
-          {{ states.remote.harmony_hub.attributes.current_activity }}
-        {%- endif %}
-      friendly_name: 'Living Room TV'
-
 - platform: rest
   resource: https://api.travis-ci.org/repos/claytonjdc/Home-Assistant/builds
   headers:

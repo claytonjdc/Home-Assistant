@@ -1,9 +1,0 @@
-harmony_hub:
-  name: Living Room TV
-  options:
-    - Power Off
-    - Watch TV
-    - Watch Apple TV
-    - Play PS4
-  initial: Watch TV
-  icon: mdi:television

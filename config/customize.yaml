@@ -16,7 +16,7 @@ light.master_bedroom:
 light.office:
   icon: mdi:lightbulb-outline
 
-switch.harmony_hub:
+switch.living_room_tv:
   icon: mdi:television
 
 switch.hyperion:

@@ -2,8 +2,8 @@ living_room_tv:
   name: TV
   icon: mdi:television
   entities:
-  - switch.harmony_hub
-  - input_select.harmony_hub
+  - switch.living_room_tv
+  - input_select.living_room_tv
   - switch.hyperion
   - input_select.hyperion_effect
   - media_player.apple_tv
