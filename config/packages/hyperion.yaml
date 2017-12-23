@@ -22,8 +22,8 @@ hyperion:
     trigger:
      platform: template
      value_template: >
-       {{ (not is_state('sensor.harmony_hub', 'PowerOff'))
-       and (not is_state('sensor.harmony_hub', 'Watch TV'))
+       {{ states.input_select.hyperion_effect.state != 'PowerOff'
+       and states.input_select.hyperion_effect.state != 'Watch TV'
        }}
     action:
     - service: switch.turn_on
@@ -33,9 +33,9 @@ hyperion:
     trigger:
       platform: template
       value_template: >
-        {{ is_state('sensor.harmony_hub', 'Watch TV')
-        or is_state('sensor.harmony_hub', 'PowerOff')
-        }}
+        {{ states.input_select.hyperion_effect.state == 'PowerOff'
+        or states.input_select.hyperion_effect.state == 'Watch TV'
+        }}
       to: "PowerOff"
     action:
     - service: switch.turn_off
