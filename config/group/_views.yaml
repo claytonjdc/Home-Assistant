@@ -4,7 +4,7 @@ default_view:
   - device_tracker.bones
   - sensor.scotty_battery_level
   - sensor.chekov_battery_level
-  - climate.house
+  - group.house_climate
   - group.meta_rooms
   - group.short_weather
   - scene.indie_chillout
