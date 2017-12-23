@@ -50,11 +50,10 @@ harmony:
   - platform: template
     living_room_hdmi:
       friendly_name: 'Living Room HDMI'
-      value_template: >
-        {{ states.input_select.hyperion_effect.state != 'PowerOff'
-        and states.input_select.hyperion_effect.state != 'Watch TV'
+      value_template: >-
+        {{ states.sensor.living_room_tv.state != 'PowerOff' and
+           states.sensor.living_room_tv.state != 'Watch TV'
         }}
-
 
   automation:
   - alias: Harmony Change Activity
