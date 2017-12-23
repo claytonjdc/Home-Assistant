@@ -48,10 +48,11 @@ harmony:
     name: 'Harmony Hub'
 
   - platform: template
-    living_room_hdmi:
-      friendly_name: 'Living Room HDMI'
-      value_template: >
-        {{ states.sensor.living_room_tv.state != 'PowerOff' and states.sensor.living_room_tv.state != 'Watch TV' }}
+    sensors:
+      living_room_hdmi:
+        friendly_name: 'Living Room HDMI'
+        value_template: >
+          {{ states.sensor.living_room_tv.state != 'PowerOff' and states.sensor.living_room_tv.state != 'Watch TV' }}
 
   automation:
   - alias: Harmony Change Activity
