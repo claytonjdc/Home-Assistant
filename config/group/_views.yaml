@@ -4,6 +4,7 @@ default_view:
   - device_tracker.bones
   - sensor.scotty_battery_level
   - sensor.chekov_battery_level
+  - sensor.day_phase
   - group.house_climate
   - group.meta_rooms
   - group.short_weather
