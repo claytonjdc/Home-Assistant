@@ -1,6 +1,7 @@
 meta_rooms:
   name: Rooms
   icon: mdi:home-variant
+  control: hidden
   entities:
   - group.bedroom_lights
   - group.dining_room_lights
