@@ -22,7 +22,7 @@ hyperion:
     trigger:
       platform: state
       entity_id: binary_sensor.living_room_hdmi
-      to: "On"
+      to: "on"
     action:
     - service: switch.turn_on
       entity_id: switch.hyperion
@@ -31,7 +31,7 @@ hyperion:
     trigger:
       platform: state
       entity_id: binary_sensor.living_room_hdmi
-      to: "Off"
+      to: "off"
     action:
     - service: switch.turn_off
       entity_id: switch.hyperion
