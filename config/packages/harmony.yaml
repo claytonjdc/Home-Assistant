@@ -39,13 +39,13 @@ harmony:
 
   remote:
   - platform: harmony
-    name: Harmony Hub
+    name: Living Room TV
     scan_interval: 5
 
   binary_sensor:
   - platform: ping
     host: 10.0.1.30
-    name: 'Harmony Hub'
+    name: 'Living Room TV'
 
   - platform: template
     sensors:
