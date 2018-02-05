@@ -27,6 +27,7 @@ kitchen:
   view: yes
   entities:
   - sensor.kitchen_temperature
+  - sensor.kitchen_light
   - binary_sensor.kitchen_motion
   - group.kitchen_lights
   - media_player.kitchen
