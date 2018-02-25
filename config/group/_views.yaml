@@ -81,3 +81,10 @@ outside:
   - group.misc_weather
   - group.dark_sky
   - group.met_office
+
+  system:
+  name: Other
+  icon: mdi:developer-board
+  view: yes
+  entities:
+  - group.all_automations

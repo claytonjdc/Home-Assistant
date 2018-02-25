@@ -21,3 +21,9 @@ switch.living_room_tv:
 
 switch.hyperion:
     icon: mdi:camcorder-box
+
+group.all_automations:
+  hidden: false
+
+group.all_scripts:
+  hidden: false
