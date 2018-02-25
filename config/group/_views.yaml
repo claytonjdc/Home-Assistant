@@ -82,7 +82,7 @@ outside:
   - group.dark_sky
   - group.met_office
 
-  system:
+system:
   name: Other
   icon: mdi:developer-board
   view: yes
