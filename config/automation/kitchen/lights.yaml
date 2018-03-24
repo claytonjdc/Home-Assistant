@@ -21,9 +21,14 @@
     from: 'off'
     to: 'on'
   condition:
-    condition: state
-    entity_id: light.kitchen
-    state: 'off'
+    condition: and
+    conditions:
+      - condition: state
+        entity_id: light.kitchen
+        state: 'off'
+      - condition: numeric_state
+        entity_id: sensor.kitchen_light
+        below: '15000'
   action:
   - service: hue.hue_activate_scene
     data_template:
