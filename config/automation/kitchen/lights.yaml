@@ -28,7 +28,7 @@
         state: 'off'
       - condition: numeric_state
         entity_id: sensor.kitchen_light
-        below: '14000'
+        below: '15000'
   action:
   - service: hue.hue_activate_scene
     data_template:
