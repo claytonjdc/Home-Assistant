@@ -6,8 +6,8 @@ homeassistant:
   unit_system: metric
   time_zone: Europe/London
 
-  customize: !include customize.yaml
-  packages: !include_dir_merge_named packages
+  customize: !include configuration/customize.yaml
+  packages: !include_dir_merge_named configuration/packages
 
 http:
   # Uncomment this to add a password (recommended!)
@@ -51,15 +51,15 @@ logbook:
 tts:
   - platform: google
 
-automation: !include_dir_merge_list automation
-binary_sensor: !include_dir_merge_list binary_sensor
-group: !include_dir_merge_named group
-input_select: !include_dir_merge_named input_select
-light: !include lights.yaml
-nest: !include nest.yaml
+automation: !include_dir_merge_list configuration/automation
+binary_sensor: !include_dir_merge_list configuration/binary_sensor
+group: !include_dir_merge_named configuration/group
+#input_select: !include_dir_merge_named input_select
+light: !include configuration/lights.yaml
+nest: !include configuration/nest.yaml
 #remote: !include_dir_merge_list remote
-scene: !include_dir_merge_list scene
-script: !include_dir_merge_list script
+scene: !include_dir_merge_list configuration/scene
+#script: !include_dir_merge_list script
 # shell_command: !include_dir_merge_named shell_command
-sensor: !include_dir_merge_list sensor
-switch: !include_dir_merge_list switch
+sensor: !include_dir_merge_list configuration/sensor
+switch: !include_dir_merge_list configuration/switch
