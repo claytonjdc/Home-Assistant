@@ -63,7 +63,7 @@ hyperion:
         command_state: '/config/bash_scripts/hyperion/status.sh'
 
   shell_command:
-    hyperion_off: '/config/scripts/hyperion/off.sh'
+    hyperion_off: '/config/bash_scripts/hyperion/off.sh'
     hyperion_ambilight: '/config/bash_scripts/hyperion/on.sh'
     hyperion_standby: '/config/bash_scripts/hyperion/effects.sh "Full color mood blobs"'
-    hyperion_effect: '/config/bash_scripts/hyperion/effects.sh "{{ states.input_select.hyperion_effect.state }}"'  switch:
+    hyperion_effect: '/config/bash_scripts/hyperion/effects.sh "{{ states.input_select.hyperion_effect.state }}"'
