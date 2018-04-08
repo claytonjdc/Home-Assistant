@@ -9,7 +9,6 @@ default_view:
   - group.house_climate
   - group.meta_rooms
   - group.short_weather
-  - scene.indie_chillout
 
 living_room:
   name: Living Room
