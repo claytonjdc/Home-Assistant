@@ -3,7 +3,7 @@ hyperion:
   - alias: Hyperion Sync
     trigger:
     - platform: state
-      entity_id: sensor.living_room_hdmi
+      entity_id: binary_sensor.living_room_hdmi
     - platform: state
       entity_id: input_select.hyperion_effect
     - platform: state
