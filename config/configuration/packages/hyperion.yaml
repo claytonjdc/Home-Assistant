@@ -10,6 +10,13 @@ hyperion:
       entity_id: sensor.day_phase
     - platform: state
       entity_id: light.living_room
+    - platform: state
+      entity_id: switch.TV_Power
+      to: 'on'
+      for:
+        hours: 0
+        minutes: 0
+        seconds: 45
     action:
     - service_template: >
           {% if states.binary_sensor.living_room_hdmi.state == 'on' %}
