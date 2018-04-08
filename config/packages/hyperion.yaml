@@ -9,7 +9,7 @@ hyperion:
     - platform: state
       entity_id: sensor.day_phase
     - platform: state
-      entity_id: input_boolean.light.living_room
+      entity_id: light.living_room
     action:
     - service_template: >
           {% if states.sensor.living_room_hdmi.state == 'on' %}
