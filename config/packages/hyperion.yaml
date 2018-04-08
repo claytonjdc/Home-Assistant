@@ -53,7 +53,7 @@ hyperion:
 #      - "Color traces"
 #      initial: "None"
 
- switch:
+  switch:
   - platform: command_line
     switches:
       hyperion:
