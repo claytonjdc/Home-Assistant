@@ -1,3 +1,3 @@
 - platform: tplink
   name: TV Power
-  host: 10.0.1.6
+  host: 10.0.1.8
