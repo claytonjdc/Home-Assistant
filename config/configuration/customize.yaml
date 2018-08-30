@@ -20,7 +20,7 @@ switch.living_room_tv:
   icon: mdi:television
 
 switch.hyperion:
-    icon: mdi:camcorder-box
+  icon: mdi:camcorder-box
 
 group.all_automations:
   hidden: false
