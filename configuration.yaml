@@ -31,7 +31,6 @@ updater:
   include_used_components: true
 
 recorder:
-  db_url: !secret db_connection
   purge_interval: 1
   purge_keep_days: 14
   exclude:
@@ -46,6 +45,11 @@ logbook:
     - sensor.average_load_15m
     - sensor.since_last_boot
 
+hue:
+  bridges:
+  - host: 10.0.1.5
+    allow_unreachable: false
+    allow_hue_groups: true
 
 # Text to speech
 tts:
@@ -55,7 +59,6 @@ automation: !include_dir_merge_list configuration/automation
 binary_sensor: !include_dir_merge_list configuration/binary_sensor
 group: !include_dir_merge_named configuration/group
 #input_select: !include_dir_merge_named input_select
-light: !include configuration/lights.yaml
 nest: !include configuration/nest.yaml
 #remote: !include_dir_merge_list remote
 scene: !include_dir_merge_list configuration/scene
