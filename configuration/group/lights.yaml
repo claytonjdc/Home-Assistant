@@ -26,21 +26,21 @@ kitchen_lights:
   icon: mdi:food-variant
   entities:
   - light.kitchen
-  - light.spot_1
-  - light.spot_2
-  - light.spot_3
-  - light.spot_4
-  - light.spot_5
-  - light.spot_6
-  - light.coffee
+  - light.kitchen_spot_1
+  - light.kitchen_spot_2
+  - light.kitchen_spot_3
+  - light.kitchen_spot_4
+  - light.kitchen_spot_5
+  - light.kitchen_spot_6
+  - light.kitchen_corner
 
 living_room_lamp:
   name: Living Room Lamp
   icon: mdi:lava-lamp
   entities:
-  - light.ikea_lamp_1
-  - light.ikea_lamp_2
-  - light.ikea_lamp_3
+  - light.living_room_lamp_1
+  - light.living_room_lamp_2
+  - light.living_room_lamp_3
 
 living_room_lights:
   name: Living Room
