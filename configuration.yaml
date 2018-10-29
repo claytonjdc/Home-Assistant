@@ -47,7 +47,7 @@ logbook:
 
 hue:
   bridges:
-  - host: 10.0.1.5
+  - host: 192.168.0.116
     allow_unreachable: false
     allow_hue_groups: true
 
