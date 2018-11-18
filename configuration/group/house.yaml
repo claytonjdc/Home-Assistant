@@ -3,6 +3,7 @@ house_climate:
   entities:
   - climate.house
   - sensor.kitchen_temperature
+  - sensor.entryway_temperature
   - sensor.house_thermostat_humidity
 
 house_other:
