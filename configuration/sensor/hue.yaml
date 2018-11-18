@@ -13,3 +13,13 @@
       friendly_name: 'Kitchen Temperature'
       unit_of_measurement: °C
       value_template: '{{ states.sensor.kitchen_motion_sensor.attributes.temperature }}'
+
+    entryway_light:
+      friendly_name: 'Entryway Light'
+      unit_of_measurement: Lux
+      value_template: '{{ states.sensor.entryway_motion_sensor.attributes.light_level }}'
+
+    entryway_temperature:
+      friendly_name: 'Entryway Temperature'
+      unit_of_measurement: °C
+      value_template: '{{ states.sensor.entryway_motion_sensor.attributes.temperature }}'

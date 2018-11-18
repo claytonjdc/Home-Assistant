@@ -4,3 +4,8 @@
       friendly_name: 'Kitchen Motion'
       value_template: >
         {{ states.sensor.kitchen_motion_sensor.state == 'on' }}
+
+    entryway_motion:
+      friendly_name: 'Entryway Motion'
+      value_template: >
+        {{ states.sensor.entryway_motion_sensor.state == 'on' }}
