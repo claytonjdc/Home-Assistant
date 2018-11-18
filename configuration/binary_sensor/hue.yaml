@@ -8,4 +8,4 @@
     entryway_motion:
       friendly_name: 'Entryway Motion'
       value_template: >
-        {{ states.sensor.motion_entryway_sensor.state == 'on' }}
+        {{ states.sensor.entryway_motion_sensor.state == 'on' }}
