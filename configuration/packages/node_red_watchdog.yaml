@@ -22,7 +22,7 @@ node_red_watchdo:
 
 #from input boolean.yaml
   input_boolean:
-  - alias: node_red_heartbeat
+    node_red_heartbeat:
       name: Node Red Heartbeat
       initial: off
       icon: mdi:heart-pulse
