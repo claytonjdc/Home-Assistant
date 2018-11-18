@@ -1,23 +1,24 @@
-automation:
-- alias: Node Red Watchdog
-  trigger:
-    - platform: state
-      entity_id: input_boolean.node_red_heartbeat
-      to: "off"
-      for:
-        minutes: 5
-    - platform: state
-      entity_id: input_boolean.node_red_heartbeat
-      to: "on"
-      for:
-        minutes: 5
-  action:
-    - service: hassio.addon_restart
-      data:
-        addon: a0d7b954_nodered
-    - service: notify.ios_bones
-      data:
-        message: "Node-RED has flatlined, restarting..."
+node_red_watchdo:
+  automation:
+  - alias: Node Red Watchdog
+    trigger:
+      - platform: state
+        entity_id: input_boolean.node_red_heartbeat
+        to: "off"
+        for:
+          minutes: 5
+      - platform: state
+        entity_id: input_boolean.node_red_heartbeat
+        to: "on"
+        for:
+          minutes: 5
+    action:
+      - service: hassio.addon_restart
+        data:
+          addon: a0d7b954_nodered
+      - service: notify.ios_bones
+        data:
+          message: "Node-RED has flatlined, restarting..."
 
 #from input boolean.yaml
 input_boolean:
