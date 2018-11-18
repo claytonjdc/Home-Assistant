@@ -1,3 +1,8 @@
+- platform: hue
+  ip_address: 192.168.0.116
+  token: !secret hue_token
+
+
 - platform: rest
   resource: !secret hue_kitchen_light
   value_template: '{{ value_json.state.lightlevel }}'
