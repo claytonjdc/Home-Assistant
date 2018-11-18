@@ -1,5 +1,6 @@
-- platform: rest
-  resource: !secret hue_kitchen_motion
-  value_template: '{{ value_json.state.presence }}'
-  scan_interval: 1
-  name: 'Kitchen Motion'
+- platform: template
+  sensors:
+    kitchen_motion:
+      friendly_name: 'Kitchen Motion'
+      value_template: >
+        {{ states.sensor.kitchen_motion_sensor.state == 'on' }}
