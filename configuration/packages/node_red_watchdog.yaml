@@ -21,8 +21,8 @@ node_red_watchdo:
           message: "Node-RED has flatlined, restarting..."
 
 #from input boolean.yaml
-input_boolean:
-  node_red_heartbeat:
-    name: Node Red Heartbeat
-    initial: off
-    icon: mdi:heart-pulse
+- input_boolean:
+    node_red_heartbeat:
+      name: Node Red Heartbeat
+      initial: off
+      icon: mdi:heart-pulse
