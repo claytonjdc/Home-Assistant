@@ -50,6 +50,7 @@ lights:
   - group.bedroom_lights
   - group.dining_room_lights
   - group.hallway_lights
+  - group.top_floor_landing
   - group.kitchen_lights
   - group.living_room_lamp
   - group.living_room_lights

@@ -19,6 +19,11 @@ hallway_lights:
   - light.hallway
   - light.entryway
   - light.middle_landing
+
+top_floor_landing:
+  name: Top Landing
+  icon: mdi:ceiling-light
+  entities:
   - light.top_landing
 
 kitchen_lights:
