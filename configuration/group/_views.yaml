@@ -6,6 +6,7 @@ default_view:
   - sensor.scotty_battery_level
   - sensor.chekov_battery_level
   - sensor.day_phase
+  - input_boolean.night_mode
   - group.house_climate
   - group.meta_rooms
   - group.short_weather
