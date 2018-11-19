@@ -1,14 +1,14 @@
 house_climate:
   name: House Climate
   entities:
-  - sensor.house_thermostat_humanity
+  - sensor.house_thermostat_humidity
   - climate.house
   - sensor.kitchen_temperature
   - sensor.entryway_temperature
   - sensor.kitchen_light
   - sensor.entryway_light
   - binary_sensor.kitchen_motion
-  - binary_sensor.hallway_motion
+  - binary_sensor.entryway_motion
 
 house_other:
   name: House Other
