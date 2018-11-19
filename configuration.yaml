@@ -63,7 +63,7 @@ weblink:
  #   url: http://mybtdevice.home
   - name: Travis
     icon: mdi:worker
-    url: https://travis-ci.org/claytonjdc/hass-config
+    url: https://travis-ci.org/claytonjdc/Home-Assistant
   - name: Node Red
     icon: mdi:sitemap
     url: https://hass15wsw.duckdns.org:1880/
@@ -76,6 +76,7 @@ tts:
 automation: !include_dir_merge_list configuration/automation
 binary_sensor: !include_dir_merge_list configuration/binary_sensor
 group: !include_dir_merge_named configuration/group
+input_boolean: !include_dir_merge_named configuration/input_boolean
 #input_select: !include_dir_merge_named input_select
 nest: !include configuration/nest.yaml
 #remote: !include_dir_merge_list remote
