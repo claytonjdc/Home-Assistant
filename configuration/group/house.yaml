@@ -5,10 +5,13 @@ house_climate:
   - climate.house
   - sensor.kitchen_temperature
   - sensor.entryway_temperature
+  - sensor.top_floor_temperature
   - sensor.kitchen_light
   - sensor.entryway_light
+  - sensor.top_floor_light
   - binary_sensor.kitchen_motion
   - binary_sensor.entryway_motion
+  - binary_sensor.top_floor_motion
 
 house_other:
   name: House Other

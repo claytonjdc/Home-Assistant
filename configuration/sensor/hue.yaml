@@ -23,3 +23,13 @@
       friendly_name: 'Entryway Temperature'
       unit_of_measurement: °C
       value_template: '{{ states.sensor.entryway_motion_sensor.attributes.temperature }}'
+
+    top_floor_light:
+      friendly_name: 'Top Floor Light'
+      unit_of_measurement: Lux
+      value_template: '{{ states.sensor.top_floor_motion_sensor.attributes.light_level }}'
+
+    top_floor_temperature:
+      friendly_name: 'Top Floor Temperature'
+      unit_of_measurement: °C
+      value_template: '{{ states.sensor.top_floor_motion_sensor.attributes.temperature }}'
