@@ -2,29 +2,31 @@ bedroom_lights:
   name: Bedroom
   icon: mdi:hotel
   entities:
-  - light.master_bedroom
   - light.bedroom
+  - light.bedroom_main
 
 dining_room_lights:
   name: Dining Room
   icon: mdi:silverware-variant
   entities:
   - light.dining_room
-  - light.dining_room_2
+  - light.dining_room_main
 
 hallway_lights:
   name: Hallway
   icon: mdi:ceiling-light
   entities:
-  - light.hallway
+  - light.front_door
   - light.entryway
   - light.middle_landing
+  - light.top_landing
 
 top_floor_landing:
   name: Top Landing
   icon: mdi:ceiling-light
   entities:
   - light.top_landing
+  - light.top_hallway
 
 kitchen_lights:
   name: Kitchen
@@ -61,4 +63,4 @@ office_lights:
   icon: mdi:desktop-mac
   entities:
   - light.office
-  - light.office_2
+  - light.office_main

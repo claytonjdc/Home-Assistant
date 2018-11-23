@@ -19,8 +19,6 @@ living_room:
   entities:
   - group.living_room_lights
   - group.living_room_tv
-  - group.living_room_this_week
-  - group.living_room_last_week
   - media_player.living_room
 
 kitchen:
@@ -40,7 +38,7 @@ bedroom:
   view: yes
   entities:
     - media_player.bedroom
-    - light.master_bedroom
+    - light.bedroom
 
 lights:
   name: Lights
