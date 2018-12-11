@@ -85,7 +85,5 @@ input_boolean: !include_dir_merge_named configuration/input_boolean
 nest: !include configuration/nest.yaml
 #remote: !include_dir_merge_list remote
 scene: !include_dir_merge_list configuration/scene
-#script: !include_dir_merge_list script
-# shell_command: !include_dir_merge_named shell_command
 sensor: !include_dir_merge_list configuration/sensor
 switch: !include_dir_merge_list configuration/switch
