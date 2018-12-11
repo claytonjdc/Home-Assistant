@@ -10,7 +10,7 @@ climate:
   name: Climate
   entities:
     - climate.house
-    - sensor.kitchen_temperature
+   # - sensor.kitchen_temperature
     - sensor.entryway_temperature
     - sensor.top_floor_temperature
 
