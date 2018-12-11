@@ -8,6 +8,7 @@ default_view:
   - sensor.day_phase
   - input_boolean.night_mode
   - group.house_climate
+  - group.house_motion
   - group.meta_rooms
   - group.short_weather
   - group.system_links
