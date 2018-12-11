@@ -7,6 +7,7 @@ default_view:
   - sensor.chekov_battery_level
   - sensor.day_phase
   - input_boolean.night_mode
+  - input_boolean.away_mode
   - group.house_climate
   - group.house_motion
   - group.meta_rooms
