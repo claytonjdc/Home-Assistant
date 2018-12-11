@@ -1,0 +1,20 @@
+house:
+  name: House
+  entities:
+    - sensor.day_phase
+ #   - input_boolean.away_mode
+    - input_boolean.night_mode
+  hours_to_show: 168
+
+climate:
+  name: Climate
+  entities:
+    - climate.house
+    - sensor.kitchen_temperature
+    - sensor.entryway_temperature
+    - sensor.top_floor_temperature
+
+lights:
+  entities:
+    - light.front_door
+    - light.kitchen
