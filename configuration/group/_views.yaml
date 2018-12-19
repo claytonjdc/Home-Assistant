@@ -13,6 +13,8 @@ default_view:
   - group.meta_rooms
   - group.short_weather
   - group.system_links
+  - history_graph.lights
+  - history_graph.house
 
 living_room:
   name: Living Room
