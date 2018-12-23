@@ -1,0 +1,9 @@
+- platform: template
+  sensors:
+    occupied:
+      friendly_name: "Occupied"
+      value_template: >
+        {{ 
+          states.device_tracker.bones.state == "home" or
+          states.sensor.recent_motion.state|float > 0
+        }}
