@@ -6,7 +6,7 @@
         {{ 
           states.binary_sensor.entryway_motion.state == 'on' or
           states.binary_sensor.kitchen_motion.state == 'on' or
-          states.binary_sensor.top_floor_motion.state == 'on' or
+          states.binary_sensor.top_floor_motion.state == 'on'
         }}
 
     kitchen_motion:
