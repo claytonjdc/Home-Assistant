@@ -15,6 +15,7 @@ climate:
     - sensor.top_floor_temperature
 
 lights:
+  name: Lights
   entities:
     - light.front_door
     - light.kitchen
