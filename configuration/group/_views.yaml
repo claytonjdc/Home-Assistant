@@ -2,6 +2,7 @@ default_view:
   name: Home
   view: yes
   entities:
+  - binary_sensor.occupied
   - device_tracker.bones
   - sensor.scotty_battery_level
   - sensor.chekov_battery_level
