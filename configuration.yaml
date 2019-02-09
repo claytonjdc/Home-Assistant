@@ -44,9 +44,22 @@ logbook:
     - sensor.cpu_temp
     - sensor.average_load_15m
     - sensor.since_last_boot
-logger:
-  logs:
-    homeassistant.components.hue: debug
+logbook:
+  exclude:
+    domains:
+      - group
+    entities:
+      - input_boolean.node_red_heartbeat
+      - binary_sensor.kitchen_motion
+      - binary_sensor.entryway_motion
+      - binary_sensor.top_floor_motion
+      - sensor.log_db_file_size
+      - sensor.cpu_temp
+      - sensor.average_load_15m
+      - sensor.since_last_boot
+      - sensor.replay_kitchen
+      - sensor.replay_entryway
+      - sensor.replay_top_floor
 
 # Enablers
 hue:
