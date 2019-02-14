@@ -39,13 +39,6 @@ recorder:
 history:
 logbook:
   exclude:
-    entities:
-    - sensor.log_db_file_size
-    - sensor.cpu_temp
-    - sensor.average_load_15m
-    - sensor.since_last_boot
-logbook:
-  exclude:
     domains:
       - group
     entities:
