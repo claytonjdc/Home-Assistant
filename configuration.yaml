@@ -9,34 +9,29 @@ homeassistant:
   customize: !include configuration/customize.yaml
   packages: !include_dir_merge_named configuration/packages
 
-http:
-  # Uncomment this to add a password (recommended!)
-  api_password: !secret hass_password
-  # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
-  base_url: hass15wsw.duckdns.org:8123
-  trusted_networks:
-  - 127.0.0.1
-  - 192.168.0.0/24
-  - 10.0.1.0/24
-
-
 # Enablers
 config:
 conversation:
 discovery:
 frontend:
+hue:
+  bridges:
+  - host: 192.168.0.116
+    allow_unreachable: false
+    allow_hue_groups: true
 ios:
 sun:
 updater:
   include_used_components: true
 
+# History
 recorder:
   purge_interval: 1
   purge_keep_days: 14
   exclude:
     entities:
     - sensor.date
-history:
+#history:
 logbook:
   exclude:
     domains:
@@ -54,22 +49,9 @@ logbook:
       - sensor.replay_entryway
       - sensor.replay_top_floor
 
-# Enablers
-hue:
-  bridges:
-  - host: 192.168.0.116
-    allow_unreachable: false
-    allow_hue_groups: true
-
 # external links
 weblink:
   entities:
- # - name: Sky Router
- #   icon: mdi:ethernet
- #   url: http://192.168.0.1
- # - name: BT WiFi
- #   icon: mdi:router-wireless
- #   url: http://mybtdevice.home
   - name: Travis
     icon: mdi:worker
     url: https://travis-ci.org/claytonjdc/Home-Assistant
@@ -82,14 +64,22 @@ weblink:
 tts:
   - platform: google
 
+http:
+  # Uncomment this to add a password (recommended!)
+  api_password: !secret hass_password
+  # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
+  base_url: hass15wsw.duckdns.org:8123
+  trusted_networks:
+  - 127.0.0.1
+  - 192.168.0.0/24
+  - 10.0.1.0/24
+  
 automation: !include_dir_merge_list configuration/automation
 binary_sensor: !include_dir_merge_list configuration/binary_sensor
 group: !include_dir_merge_named configuration/group
 history_graph: !include_dir_merge_named configuration/history_graph
 input_boolean: !include_dir_merge_named configuration/input_boolean
-#input_select: !include_dir_merge_named input_select
 nest: !include configuration/nest.yaml
-#remote: !include_dir_merge_list remote
 scene: !include_dir_merge_list configuration/scene
 sensor: !include_dir_merge_list configuration/sensor
 switch: !include_dir_merge_list configuration/switch
