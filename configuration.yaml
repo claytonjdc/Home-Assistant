@@ -68,7 +68,7 @@ http:
   # Uncomment this to add a password (recommended!)
   api_password: !secret hass_password
   # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
-  base_url: hass15wsw.duckdns.org:8123
+  base_url: !secret hass_base_url
   trusted_networks:
   - 127.0.0.1
   - 192.168.0.0/24
