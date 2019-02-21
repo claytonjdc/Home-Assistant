@@ -31,7 +31,6 @@ recorder:
   exclude:
     entities:
     - sensor.date
-#history:
 logbook:
   exclude:
     domains:
@@ -59,10 +58,29 @@ weblink:
     icon: mdi:sitemap
     url: https://hass15wsw.duckdns.org:1880/
 
-
 # Text to speech
 tts:
   - platform: google
+
+# Device Tracking
+zone:
+  - zone:
+    name: Home
+    latitude: !secret zone_home_lat
+    longitude: !secret zone_home_long
+    radius: 250
+
+  - zone:
+    name: Accom
+    latitude: !secret zone_accom_lat
+    longitude: !secret zone_accom_long
+    radius: 250
+  
+  - zone:
+    name: Work
+    latitude: !secret zone_work_lat
+    longitude: !secret zone_work_long
+    radius: 500
 
 http:
   # Uncomment this to add a password (recommended!)
