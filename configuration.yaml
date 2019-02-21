@@ -1,7 +1,7 @@
 homeassistant:
   name: Home
-  latitude: 50.2601751
-  longitude: -5.089021499999944
+  latitude: !secret zone_home_lat
+  longitude: !secret zone_home_lomg
   elevation: 110
   unit_system: metric
   time_zone: Europe/London
