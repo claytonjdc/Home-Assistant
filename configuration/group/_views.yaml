@@ -4,8 +4,6 @@ default_view:
   entities:
   - binary_sensor.occupied
   - device_tracker.bones
-#  - sensor.scotty_battery_level
-#  - sensor.chekov_battery_level
   - sensor.day_phase
   - input_boolean.night_mode
   - input_boolean.away_mode
@@ -14,8 +12,6 @@ default_view:
   - group.meta_rooms
   - group.short_weather
   - group.system_links
-  - history_graph.lights
-  - history_graph.house
 
 living_room:
   name: Living Room
