@@ -18,12 +18,6 @@ house_motion:
   - binary_sensor.entryway_motion
   - binary_sensor.top_floor_motion
 
-house_other:
-  name: House Other
-  entities:
-  - sensor.kitchen_light
-  - binary_sensor.kitchen_motion
-
 smoke_detector:
   name: Smoke Detector
   entities:
