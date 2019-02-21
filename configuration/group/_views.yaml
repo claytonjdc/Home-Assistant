@@ -73,6 +73,7 @@ house:
   view: yes
   entities:
   - group.house_climate
+  - group.house_motion
   - group.house_other
   - group.network
   - group.smoke_detector
