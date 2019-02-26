@@ -33,13 +33,13 @@ kitchen:
   - group.kitchen_lights
  # - media_player.kitchen
 
-bedroom:
-  name: Bedroom
-  icon: mdi:hotel
-  view: yes
-  entities:
- #   - media_player.bedroom
-    - light.bedroom
+# bedroom:
+#  name: Bedroom
+#  icon: mdi:hotel
+#  view: yes
+#  entities:
+#    - media_player.bedroom
+#    - light.bedroom
 
 lights:
   name: Lights
