@@ -20,7 +20,7 @@ living_room:
   entities:
   - group.living_room_lights
   - group.living_room_tv
-  - media_player.living_room
+ # - media_player.living_room
 
 kitchen:
   name: Kitchen
@@ -31,14 +31,14 @@ kitchen:
   - sensor.kitchen_light
   - binary_sensor.kitchen_motion
   - group.kitchen_lights
-  - media_player.kitchen
+ # - media_player.kitchen
 
 bedroom:
   name: Bedroom
   icon: mdi:hotel
   view: yes
   entities:
-    - media_player.bedroom
+ #   - media_player.bedroom
     - light.bedroom
 
 lights:
@@ -55,13 +55,13 @@ lights:
   - group.living_room_lights
   - group.office_lights
 
-media:
-  name: Media
-  icon: mdi:movie
-  view: yes
-  entities:
-  - group.sonos
-  - group.tv
+# media:
+#  name: Media
+#  icon: mdi:movie
+#  view: yes
+#  entities:
+#  - group.sonos
+#  - group.tv
 
 house:
   name: House
