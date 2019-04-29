@@ -33,8 +33,6 @@ devices:
   entities:
   - sensor.bones_battery_level
   - sensor.bones_battery_state
-  - sensor.scotty_battery_level
-  - sensor.scotty_battery_state
-  - device_tracker.scotty
-  - sensor.chekov_battery_level
-  - sensor.chekov_battery_state
+  - sensor.sulu_battery_level
+  - sensor.sulu_battery_state
+  - device_tracker.sulu
