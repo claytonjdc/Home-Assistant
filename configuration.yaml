@@ -61,7 +61,7 @@ weblink:
 
 # Text to speech
 tts:
-  - platform: google
+  - platform: google_translate
 
 # Device Tracking
 zone:
