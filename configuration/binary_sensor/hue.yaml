@@ -9,17 +9,17 @@
           states.binary_sensor.top_floor_motion.state == 'on'
         }}
 
-    kitchen_motion:
-      friendly_name: 'Kitchen Motion'
-      value_template: >
-        {{ states.sensor.kitchen_motion_sensor.state == 'on' }}
+#    kitchen_motion:
+#      friendly_name: 'Kitchen Motion'
+#      value_template: >
+#        {{ states.sensor.kitchen_motion_sensor.state == 'on' }}
+#
+#    entryway_motion:
+#      friendly_name: 'Entryway Motion'
+#      value_template: >
+#        {{ states.sensor.entryway_motion_sensor.state == 'on' }}
 
-    entryway_motion:
-      friendly_name: 'Entryway Motion'
-      value_template: >
-        {{ states.sensor.entryway_motion_sensor.state == 'on' }}
-
-    top_floor_motion:
-      friendly_name: 'Top Floor Motion'
-      value_template: >
-        {{ states.sensor.top_floor_motion_sensor.state == 'on' }}
+#    top_floor_motion:
+#      friendly_name: 'Top Floor Motion'
+#      value_template: >
+#        {{ states.sensor.top_floor_motion_sensor.state == 'on' }}

@@ -21,6 +21,7 @@ hue:
     allow_hue_groups: true
 ios:
 sun:
+tplink:
 updater:
   include_used_components: true
 
