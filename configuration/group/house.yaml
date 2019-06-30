@@ -6,9 +6,9 @@ house_climate:
   - sensor.kitchen_temperature
   - sensor.entryway_temperature
   - sensor.top_floor_temperature
-  - sensor.kitchen_light
-  - sensor.entryway_light
-  - sensor.top_floor_light
+  - sensor.kitchen_sensor_light_level
+  - sensor.entryway_sensor_light_level
+  - sensor.top_floor_sensor_light_level
   - history_graph.climate
 
 house_motion:
