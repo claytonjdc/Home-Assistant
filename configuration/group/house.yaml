@@ -3,9 +3,9 @@ house_climate:
   entities:
   - sensor.house_thermostat_humidity
   - climate.house
-  - sensor.kitchen_temperature
-  - sensor.entryway_temperature
-  - sensor.top_floor_temperature
+  - sensor.kitchen_sensor_temperature
+  - sensor.entryway_sensor_temperature
+  - sensor.top_floor_sensor_temperature
   - sensor.kitchen_sensor_light_level
   - sensor.entryway_sensor_light_level
   - sensor.top_floor_sensor_light_level
