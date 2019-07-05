@@ -2,12 +2,12 @@
 #  ip_address: 192.168.0.116
 #  token: !secret hue_token
 
-#- platform: template
-#  sensors:
-#    kitchen_light:
-#      friendly_name: 'Kitchen Light'
-#      unit_of_measurement: Lux
-#      value_template: '{{ states.binary_sensor.kitchen_sensor_motion.attributes.light_level }}'
+- platform: template
+  sensors:
+    kitchen_light:
+      friendly_name: 'Kitchen Light'
+      unit_of_measurement: Lux
+      value_template: '{{ states.sensor.kitchen_sensor_light_level.attributes.lightlevel }}'
 
     # kitchen_temperature:
     #   friendly_name: 'Kitchen Temperature'
