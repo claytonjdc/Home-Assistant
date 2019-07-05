@@ -27,9 +27,9 @@ kitchen:
   icon: mdi:food-variant
   view: yes
   entities:
-  - sensor.kitchen_temperature
+  - sensor.kitchen_sensor_temperature
   - sensor.kitchen_light
-  - binary_sensor.kitchen_motion
+  - binary_sensor.kitchen_sensor_motion
   - group.kitchen_lights
  # - media_player.kitchen
 
