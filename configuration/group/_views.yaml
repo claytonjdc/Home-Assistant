@@ -31,15 +31,7 @@ kitchen:
   - sensor.kitchen_light
   - binary_sensor.kitchen_sensor_motion
   - group.kitchen_lights
- # - media_player.kitchen
 
-# bedroom:
-#  name: Bedroom
-#  icon: mdi:hotel
-#  view: yes
-#  entities:
-#    - media_player.bedroom
-#    - light.bedroom
 
 lights:
   name: Lights
@@ -55,13 +47,6 @@ lights:
   - group.living_room_lights
   - group.office_lights
 
-# media:
-#  name: Media
-#  icon: mdi:movie
-#  view: yes
-#  entities:
-#  - group.sonos
-#  - group.tv
 
 house:
   name: House

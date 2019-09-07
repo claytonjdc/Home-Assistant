@@ -20,6 +20,10 @@ hue:
     allow_unreachable: true
     allow_hue_groups: true
 ios:
+media_player:
+  - platform: webostv
+    host: 192.168.0.124
+    name: LG TV
 sun:
 tplink:
 updater:
