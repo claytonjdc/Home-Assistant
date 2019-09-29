@@ -24,6 +24,9 @@ media_player:
   - platform: webostv
     host: 192.168.0.124
     name: LG TV
+  - platform: kodi
+    host: 192.168.0.127
+    name: Harmony Pi
 sun:
 tplink:
 updater:
