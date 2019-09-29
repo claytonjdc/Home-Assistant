@@ -27,6 +27,9 @@ media_player:
   - platform: kodi
     host: 192.168.0.127
     name: Harmony Pi
+    username: !secret harmony_pi_username
+    password: !secret harmony_pi_password
+
 sun:
 tplink:
 updater:
