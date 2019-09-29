@@ -24,11 +24,12 @@ media_player:
   - platform: webostv
     host: 192.168.0.124
     name: LG TV
+    
   - platform: kodi
     host: 192.168.0.127
-    name: Harmony Pi
-    username: !secret harmony_pi_username
-    password: !secret harmony_pi_password
+    name: Ambilight Pi
+    username: !secret ambilight_pi_username
+    password: !secret ambilight_pi_password
 
 sun:
 tplink:
