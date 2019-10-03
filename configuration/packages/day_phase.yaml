@@ -9,6 +9,7 @@ day_phase:
         - input_boolean.day_phase_day
         - input_boolean.day_phase_evening
         - input_boolean.day_phase_night
+        - input_boolean.holiday_mode
         - sensor.day_phase_real
 
   sensor:
@@ -31,18 +32,26 @@ day_phase:
         day_phase_real:
           friendly_name: "Day Phase Real"
           value_template: >
-            {% if   now() > now().replace(hour=5).replace(minute=0).replace(second=0) and
-                    now() < now().replace(hour=8).replace(minute=0).replace(second=0)
-            %}
-                Morning
-            {% elif states.sun.sun.state == "above_horizon" 
-                or  now() > now().replace(hour=6).replace(minute=0).replace(second=0) and
-                    now() < now().replace(hour=20).replace(minute=0).replace(second=0)
-            %}
+            {% set time = now() %}
+            {% set isDaylight = states.sun.sun.state == "above_horizon" %}
+            {% set notHoliday = states.input_boolean.holiday_mode.state == "off" %}
+            {% set isWeekday = time.isoweekday() <= 5 %}
+            {% set t0000 = time.replace(hour=0).replace(minute=0).replace(second=0) %}
+            {% set t0500 = t0000.replace(hour=5) %}
+            {% set t0800 = t0000.replace(hour=8) %}
+            {% set t1200 = t0000.replace(hour=12) %}
+            {% set t1600 = t0000.replace(hour=16) %}
+            {% set t1900 = t0000.replace(hour=19) %}
+            {% set t2130 = t0000.replace(hour=21).replace(minute=30) %}
+
+            {% if t0500 <= time and time < t0800 and isWeekday %}
+              Morning
+            {% elif isDaylight 
+                or (t0800 <= time and time < t1900 and isWeekday and notHoliday)
+                or (t0800 <= time and time < t1600)
+            %} 
                 Day
-            {% elif now() < now().replace(hour=22).replace(minute=00).replace(second=0) and
-                    now() > now().replace(hour=12).replace(minute=0).replace(second=0) 
-            %}
+            {% elif t1600 <= time and time < t2130 %}
                 Evening
             {% else %}
                 Night
@@ -68,6 +77,11 @@ day_phase:
       name: Night
       initial: off
       icon: mdi:weather-night
+
+    holiday_mode:
+      name: Holiday Mode
+      initial: off
+      icon: mdi:human-handsup
 
   automation:
     - alias: Day Phase Overrride Reset
