@@ -66,7 +66,7 @@ house:
 
 outside:
   name: Outside
-  icon: mdi:weather-partlycloudy
+  icon: mdi:weather-partly-cloudy
   view: yes
   entities:
   - group.misc_weather
