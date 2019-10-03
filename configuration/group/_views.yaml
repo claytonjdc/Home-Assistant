@@ -18,26 +18,6 @@ default_view:
   - group.short_weather
   - group.system_links
 
-#living_room:
-#  name: Living Room
-#  icon: mdi:sofa
-#  view: yes
-#  entities:
-#  - group.living_room_lights
-#  - group.living_room_tv
- # - media_player.living_room
-
-#kitchen:
-#  name: Kitchen
-#  icon: mdi:food-variant
-#  view: yes
-#  entities:
-#  - sensor.kitchen_sensor_temperature
-#  - sensor.kitchen_light
-#  - binary_sensor.kitchen_sensor_motion
-#  - group.kitchen_lights
-
-
 lights:
   name: Lights
   icon: mdi:lightbulb
@@ -51,7 +31,6 @@ lights:
   - group.living_room_lamp
   - group.living_room_lights
   - group.office_lights
-
 
 house:
   name: House
