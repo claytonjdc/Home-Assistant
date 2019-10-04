@@ -26,7 +26,6 @@ media_player:
     name: LG TV
 
 sun:
-tplink:
 updater:
   include_used_components: true
 
