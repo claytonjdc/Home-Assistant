@@ -1,0 +1,9 @@
+# ENT = Evening Nautical Twilight
+# when the sun is below the horizon, the sky is dark, but the horizon is just visible
+
+- platform: template
+  sensors: 
+    ENT:
+      friendly_name: Evening Nautical Twilight
+      value_template: >
+          {{ states.sun.sun.attributes.elevation <-12 }}
