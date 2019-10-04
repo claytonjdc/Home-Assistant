@@ -21,7 +21,7 @@ day_phase:
             {{ states.sun.sun.attributes.elevation <-12 }}
   
   sensor:
-    - platform:
+    - platform: template
       sensors:
         day_phase:
           friendly_name: "Day Phase"
