@@ -15,10 +15,10 @@ day_phase:
   binary_sensor:
     - platform: template
       sensors:
-        eve_nt: #Sensor to give Nautical Dawn and Dusk
-          friendly_name: Evening Nautical Twilight
+        eve_ct: #Sensor to give Civil Dawn and Dusk
+          friendly_name: Evening Civil Twilight
           value_template: >
-            {{ states.sun.sun.attributes.elevation <-12 }}
+            {{ states.sun.sun.attributes.elevation <-5 }}
   
   sensor:
     - platform: template
@@ -41,7 +41,7 @@ day_phase:
           friendly_name: "Day Phase Real"
           value_template: >
             {% set time = now() %}
-            {% set isDaylight = states.binary_sensor.eve_nt.state == "off" %}
+            {% set isDaylight = states.binary_sensor.eve_ct.state == "off" %}
             {% set notHoliday = states.input_boolean.holiday_mode.state == "off" %}
             {% set isWeekday = time.isoweekday() <= 5 %}
             {% set t0000 = time.replace(hour=0).replace(minute=0).replace(second=0) %}
