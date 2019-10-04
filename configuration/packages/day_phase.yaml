@@ -12,8 +12,16 @@ day_phase:
         - input_boolean.holiday_mode
         - sensor.day_phase_real
 
-  sensor:
+  binary_sensor:
     - platform: template
+      sensors:
+        eve_nt: #Sensor to give Nautical Dawn and Dusk
+          friendly_name: Evening Nautical Twilight
+          value_template: >
+            {{ states.sun.sun.attributes.elevation <-12 }}
+  
+  sensor:
+    - platform:
       sensors:
         day_phase:
           friendly_name: "Day Phase"
