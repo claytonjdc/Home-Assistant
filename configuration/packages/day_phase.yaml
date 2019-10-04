@@ -45,14 +45,14 @@ day_phase:
             {% set notHoliday = states.input_boolean.holiday_mode.state == "off" %}
             {% set isWeekday = time.isoweekday() <= 5 %}
             {% set t0000 = time.replace(hour=0).replace(minute=0).replace(second=0) %}
-            {% set t0500 = t0000.replace(hour=5) %}
+            {% set t0600 = t0000.replace(hour=6) %}
             {% set t0800 = t0000.replace(hour=8) %}
             {% set t1200 = t0000.replace(hour=12) %}
             {% set t1600 = t0000.replace(hour=16) %}
             {% set t1900 = t0000.replace(hour=19) %}
             {% set t2130 = t0000.replace(hour=21).replace(minute=30) %}
 
-            {% if t0500 <= time and time < t0800 and isWeekday %}
+            {% if t0600 <= time and time < t0800 and isWeekday %}
               Morning
             {% elif isDaylight 
                 or (t0800 <= time and time < t1900 and isWeekday and notHoliday)
