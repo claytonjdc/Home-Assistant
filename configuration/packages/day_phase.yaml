@@ -13,6 +13,9 @@ day_phase:
         - sensor.day_phase_real
 
   sensor:
+    - platform: time_date
+      display_options:
+        - "time"
     - platform: template
       sensors:
         day_phase:
@@ -31,6 +34,7 @@ day_phase:
             {% endif %}
         day_phase_real:
           friendly_name: "Day Phase Real"
+          entity_id: sensor.time
           value_template: >
             {% set time = now() %}
             {% set isDaylight = states.sun.sun.attributes.elevation > -5 %}
