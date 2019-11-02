@@ -10,6 +10,7 @@ homeassistant:
   packages: !include_dir_merge_named configuration/packages
 
 # Enablers
+cloud:
 config:
 conversation:
 discovery:
