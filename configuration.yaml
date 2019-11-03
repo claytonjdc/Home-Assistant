@@ -20,7 +20,7 @@ hue:
   - host: 192.168.0.116
     allow_unreachable: false
     allow_hue_groups: true
-ios:
+#ios:
 media_player:
   - platform: webostv
     host: 192.168.0.124
