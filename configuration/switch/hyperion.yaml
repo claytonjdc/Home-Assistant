@@ -1,0 +1,9 @@
+# Switch configuration and naming for hyperion bash scripts. Allows Node Red to call switches rather then bash scripts
+switch:
+- platform: command_line
+  switches:
+    hyperion:
+      friendly_name: Ambilight
+      command_on: '/config/bash_scripts/hyperion/on.sh'
+      command_off: '/config/bash_scripts/hyperion/off.sh'
+      command_state: '/config/bash_scripts/hyperion/status.sh'
