@@ -1,5 +1,3 @@
-# Switch configuration and naming for hyperion bash scripts. Allows Node Red to call switches rather then bash scripts
-switch:
 - platform: command_line
   switches:
     hyperion:
