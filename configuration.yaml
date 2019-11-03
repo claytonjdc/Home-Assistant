@@ -65,7 +65,7 @@ weblink:
     url: https://travis-ci.org/claytonjdc/Home-Assistant
   - name: Node Red
     icon: mdi:sitemap
-    url: https://hass15wsw.duckdns.org:1880/
+    url: https://c4qtytxo2egxsr0rszmpbcomt19r7ezd.ui.nabu.casa/a0d7b954_nodered
 
 # Text to speech
 tts:
@@ -77,12 +77,6 @@ zone:
     name: Home
     latitude: !secret zone_home_lat
     longitude: !secret zone_home_long
-    radius: 250
-
-  - zone:
-    name: Accom
-    latitude: !secret zone_accom_lat
-    longitude: !secret zone_accom_long
     radius: 250
   
   - zone:
