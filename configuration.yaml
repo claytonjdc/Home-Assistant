@@ -102,7 +102,7 @@ http:
   - 10.0.1.0/24
 
 # Components
-automation: !include_dir_merge_list configuration/automation
+# automation: !include_dir_merge_list configuration/automation
 binary_sensor: !include_dir_merge_list configuration/binary_sensor
 group: !include_dir_merge_named configuration/group
 history_graph: !include_dir_merge_named configuration/history_graph
@@ -110,4 +110,3 @@ input_boolean: !include_dir_merge_named configuration/input_boolean
 nest: !include configuration/nest.yaml
 scene: !include_dir_merge_list configuration/scene
 sensor: !include_dir_merge_list configuration/sensor
-# switch: !include_dir_merge_list configuration/switch
