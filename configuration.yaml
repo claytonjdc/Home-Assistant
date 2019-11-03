@@ -14,6 +14,9 @@ cloud:
 config:
 conversation:
 discovery:
+  ignore:
+    - apple_tv
+    - plex_mediaserver
 frontend:
 hue:
   bridges:
