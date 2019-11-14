@@ -17,13 +17,15 @@ discovery:
   ignore:
     - apple_tv
     - plex_mediaserver
+  enable:
+    - homekit
 frontend:
 hue:
   bridges:
   - host: 192.168.0.116
     allow_unreachable: false
     allow_hue_groups: true
-ios:
+#ios:
 media_player:
   - platform: webostv
     host: 192.168.0.124
