@@ -7,3 +7,8 @@ away_mode:
   name: Away Mode
   initial: off
   icon: mdi:account-off-outline
+
+cinema_mode:
+  name: Cinema Mode
+  initial: off
+  icon: mdi:video-vintage
