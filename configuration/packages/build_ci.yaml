@@ -5,7 +5,7 @@ build_ci:
     - platform: homeassistant
       event: start
     action:
-    - service: notify.ios_bones
+    - service: notify.mobile_app_bones
       data_template:
         message: >
           Home Assistant back online! {{ "\uD83E\uDD29" }}
@@ -20,7 +20,7 @@ build_ci:
     - platform: homeassistant
       event: shutdown
     action:
-    - service: notify.ios_bones
+    - service: notify.mobile_app_bones
       data_template:
         message: >
           Home Assistant is going down! {{ "\uD83D\uDE34" }}
@@ -32,7 +32,7 @@ build_ci:
       from: 'started'
       to: 'failed'
     action:
-    - service: notify.ios_bones
+    - service: notify.mobile_app_bones
       data_template:
         message: >
           Travis build failed! {{ "\uD83E\uDD2C" }}
@@ -46,7 +46,7 @@ build_ci:
       from: 'started'
       to: 'passed'
     action:
-    - service: notify.ios_bones
+    - service: notify.mobile_app_bones
       data_template:
         message: >
           Travis build passed! {{ "\uD83D\uDC4D" }}
