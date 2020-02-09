@@ -81,7 +81,7 @@ zone:
     longitude: !secret zone_home_long
     radius: 250
   
-  - zone:
+  - zone 2:
     name: Work
     latitude: !secret zone_work_lat
     longitude: !secret zone_work_long
