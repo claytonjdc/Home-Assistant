@@ -75,14 +75,12 @@ tts:
 
 # Device Tracking
 zone:
-  - zone:
-    name: Home
+  - name: Home
     latitude: !secret zone_home_lat
     longitude: !secret zone_home_long
     radius: 250
   
-  - zone 2:
-    name: Work
+  - name: Work
     latitude: !secret zone_work_lat
     longitude: !secret zone_work_long
     radius: 500
