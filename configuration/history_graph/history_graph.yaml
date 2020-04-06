@@ -12,6 +12,7 @@ climate:
     - climate.house
     - sensor.kitchen_sensor_temperature
     - sensor.entryway_sensor_temperature
+    - sensor.middle_floor_sensor_tmperature
     - sensor.top_floor_sensor_temperature
 
 lights:
