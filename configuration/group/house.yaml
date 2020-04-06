@@ -5,9 +5,11 @@ house_climate:
   - climate.house
   - sensor.kitchen_sensor_temperature
   - sensor.entryway_sensor_temperature
+  - sensor.middle_floor_sensor_temperature
   - sensor.top_floor_sensor_temperature
   - sensor.kitchen_light
   - sensor.entryway_light
+  - sensor.middle_floor_light
   - sensor.top_floor_light
   - history_graph.climate
 
@@ -16,6 +18,7 @@ house_motion:
   entities:
   - binary_sensor.kitchen_sensor_motion
   - binary_sensor.entryway_sensor_motion
+  - binary_sensor.middle_floor_sensor_motion
   - binary_sensor.top_floor_sensor_motion
 
 smoke_detector:
