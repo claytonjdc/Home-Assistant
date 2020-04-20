@@ -1,5 +1,0 @@
-system_links:
-  name: Links
-  entities:
-  - weblink.node_red
-  - weblink.travis
