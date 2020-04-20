@@ -18,6 +18,7 @@ discovery:
     - apple_tv
     - plex_mediaserver
 frontend:
+  themes: !include_dir_merge_named themes
 hue:
   bridges:
   - host: 192.168.0.116
