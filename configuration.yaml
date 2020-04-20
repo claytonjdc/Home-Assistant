@@ -13,10 +13,10 @@ homeassistant:
 cloud:
 config:
 conversation:
-discovery:
-  ignore:
-    - apple_tv
-    - plex_mediaserver
+#discovery:
+#  ignore:
+#    - apple_tv
+#    - plex_mediaserver
 frontend:
   themes: !include_dir_merge_named themes
 hue:
@@ -59,14 +59,14 @@ logbook:
       - sensor.replay_top_floor
 
 # external links
-weblink:
-  entities:
-  - name: Travis
-    icon: mdi:worker
-    url: https://travis-ci.org/claytonjdc/Home-Assistant
-  - name: Node Red
-    icon: mdi:sitemap
-    url: https://c4qtytxo2egxsr0rszmpbcomt19r7ezd.ui.nabu.casa/a0d7b954_nodered
+#weblink:
+#  entities:
+#  - name: Travis
+#    icon: mdi:worker
+#    url: https://travis-ci.org/claytonjdc/Home-Assistant
+#  - name: Node Red
+#    icon: mdi:sitemap
+#    url: https://c4qtytxo2egxsr0rszmpbcomt19r7ezd.ui.nabu.casa/a0d7b954_nodered
 
 # Text to speech
 tts:
