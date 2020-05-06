@@ -29,7 +29,7 @@ build_ci:
         data:
           subtitle: "Home Assistant"
           push:
-              thread-id: "System Monitoring"
+              thread-id: notification_group_1
 
   - alias: System Travis Build Status
     trigger:
@@ -46,7 +46,7 @@ build_ci:
           subtitle: "Travis Update"
           #url: https://travis-ci.org/claytonjdc/Home-Assistant
           push:
-              thread-id: "System Monitoring"
+              thread-id: notification_group_1
 
   - alias: System Travis Build Passed
     trigger:
@@ -63,7 +63,7 @@ build_ci:
           subtitle: "Travis Update"
           #url: https://travis-ci.org/claytonjdc/Home-Assistant
           push:
-              thread-id: "System Monitoring"
+              thread-id: notification_group_1
     - service: hassio.addon_start
       data:
         addon: core_git_pull

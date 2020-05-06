@@ -23,7 +23,7 @@ node_red_watchdo:
           data:
             subtitle: "Node-RED"
             push:
-              thread-id: "System Monitoring"
+              thread-id: notification_group_1
 
 #from input boolean.yaml
   input_boolean:
