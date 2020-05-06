@@ -17,8 +17,10 @@ node_red_watchdo:
         data:
           addon: a0d7b954_nodered
       - service: notify.mobile_app_bones
+        title: "System Monitoring"
+        message: "Restarting"
         data:
-          message: "Node-RED has flatlined, restarting..."
+          subtitle: "Node-Red"
 
 #from input boolean.yaml
   input_boolean:
