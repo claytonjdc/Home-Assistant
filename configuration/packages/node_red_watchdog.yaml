@@ -22,6 +22,8 @@ node_red_watchdo:
           message: "Restarting"
           data:
             subtitle: "Node-RED"
+            push:
+              thread-id: "System Monitoring"
 
 #from input boolean.yaml
   input_boolean:

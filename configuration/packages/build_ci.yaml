@@ -28,6 +28,8 @@ build_ci:
         message: "Restarting"
         data:
           subtitle: "Home Assistant"
+          push:
+              thread-id: "System Monitoring"
 
   - alias: System Travis Build Status
     trigger:
@@ -43,6 +45,8 @@ build_ci:
         data:
           subtitle: "Travis Update"
           #url: https://travis-ci.org/claytonjdc/Home-Assistant
+          push:
+              thread-id: "System Monitoring"
 
   - alias: System Travis Build Passed
     trigger:
@@ -58,6 +62,8 @@ build_ci:
         data:
           subtitle: "Travis Update"
           #url: https://travis-ci.org/claytonjdc/Home-Assistant
+          push:
+              thread-id: "System Monitoring"
     - service: hassio.addon_start
       data:
         addon: core_git_pull
