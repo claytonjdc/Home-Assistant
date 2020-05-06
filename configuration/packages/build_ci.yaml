@@ -11,9 +11,6 @@ build_ci:
         message: "Online"
         data:
           subtitle: "Home Assistant"
-      #data_template:
-      #  message: >
-      #    Home Assistant back online! {{ "\uD83E\uDD29" }}
     - delay:
         seconds: 30
     - service: hassio.addon_stop
@@ -26,9 +23,11 @@ build_ci:
       event: shutdown
     action:
     - service: notify.mobile_app_bones
-      data_template:
-        message: >
-          Home Assistant is going down! {{ "\uD83D\uDE34" }}
+      data:
+        title: "System Monitoring"
+        message: "Restarting"
+        data:
+          subtitle: "Home Assistant"
 
   - alias: System Travis Build Status
     trigger:
@@ -38,11 +37,12 @@ build_ci:
       to: 'failed'
     action:
     - service: notify.mobile_app_bones
-      data_template:
-        message: >
-          Travis build failed! {{ "\uD83E\uDD2C" }}
+      data:
+        title: "System Monitoring"
+        message: "Build Failed"
         data:
-          url: https://travis-ci.org/claytonjdc/Home-Assistant
+          subtitle: "Travis Update"
+          #url: https://travis-ci.org/claytonjdc/Home-Assistant
 
   - alias: System Travis Build Passed
     trigger:
@@ -52,11 +52,12 @@ build_ci:
       to: 'passed'
     action:
     - service: notify.mobile_app_bones
-      data_template:
-        message: >
-          Travis build passed! {{ "\uD83D\uDC4D" }}
+      data:
+        title: "System Monitoring"
+        message: "Build Passed"
         data:
-          url: https://travis-ci.org/claytonjdc/Home-Assistant
+          subtitle: "Travis Update"
+          #url: https://travis-ci.org/claytonjdc/Home-Assistant
     - service: hassio.addon_start
       data:
         addon: core_git_pull
