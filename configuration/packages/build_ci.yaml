@@ -6,9 +6,13 @@ build_ci:
       event: start
     action:
     - service: notify.mobile_app_bones
-      data_template:
-        message: >
-          Home Assistant back online! {{ "\uD83E\uDD29" }}
+      data:
+        title: "System Monitoring"
+        message: "Online"
+        subtitle: "Home Assistant"
+      #data_template:
+      #  message: >
+      #    Home Assistant back online! {{ "\uD83E\uDD29" }}
     - delay:
         seconds: 30
     - service: hassio.addon_stop
