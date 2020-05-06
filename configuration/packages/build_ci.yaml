@@ -7,12 +7,12 @@ build_ci:
     action:
     - service: notify.mobile_app_bones
       data_template: >
-        {
+        {{
           "title": "System Monitoring",
           "message": "Online",
           "data":{
             "subtitle": "Home Assistant"}
-          }
+        }}
       #data_template:
       #  message: >
       #    Home Assistant back online! {{ "\uD83E\uDD29" }}
