@@ -18,9 +18,9 @@ node_red_watchdo:
           addon: a0d7b954_nodered
       - service: notify.mobile_app_bones
         data:
-        title: "System Monitoring"
-        message: "Restarting"
-        subtitle: "Node-RED"
+          title: "System Monitoring"
+          message: "Restarting"
+          subtitle: "Node-RED"
 
 #from input boolean.yaml
   input_boolean:
