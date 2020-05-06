@@ -6,7 +6,7 @@ build_ci:
       event: start
     action:
     - service: notify.mobile_app_bones
-      data:
+      data_template:
         title: "System Monitoring"
         message: "Online"
         subtitle: "Home Assistant"
