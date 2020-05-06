@@ -20,7 +20,8 @@ node_red_watchdo:
         data:
           title: "System Monitoring"
           message: "Restarting"
-          subtitle: "Node-RED"
+          data:
+            subtitle: "Node-RED"
 
 #from input boolean.yaml
   input_boolean:
