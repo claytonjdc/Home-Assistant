@@ -1,4 +1,4 @@
-- alias: "Action Turn On Motion Disable"
+- alias: "Action Motion Disable On"
   initial_state: false
   trigger:
     - platform: event
