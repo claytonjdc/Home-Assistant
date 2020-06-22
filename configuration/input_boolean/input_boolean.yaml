@@ -12,3 +12,8 @@ cinema_mode:
   name: Cinema Mode
   initial: off
   icon: mdi:video-vintage
+
+motion_disable:
+  name: Motion Disable
+  initial: off
+  icon: mdi:motion-sensor-off
