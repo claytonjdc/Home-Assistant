@@ -30,4 +30,7 @@ visitor_mode:
   name: Visitor Mode
   initial: off
   icon: mdi:account-multiple-plus
+<<<<<<< HEAD
+>>>>>>> added visitor mode
+=======
 >>>>>>> added visitor mode
