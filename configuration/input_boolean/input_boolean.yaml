@@ -17,3 +17,9 @@ motion_disable:
   name: Motion Disable
   initial: off
   icon: mdi:motion-sensor-off
+ 
+visitor_mode:
+  name: Visitor Mode
+  iniital: off
+  icon: mdi:account-multiple-plus
+ 
