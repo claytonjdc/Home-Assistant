@@ -20,6 +20,6 @@ motion_disable:
  
 visitor_mode:
   name: Visitor Mode
-  inital: off
+  initial: off
   icon: mdi:account-multiple-plus
  
