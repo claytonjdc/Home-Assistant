@@ -1,0 +1,40 @@
+filter:
+  include_entities:
+    - binary_sensor.entryway_sensor_motion
+    - binary_sensor.middle_floor_sensor_motion
+    - binary_sensor.top_floor_sensor_motion
+    - binary_sensor.kitchen_sensor_motion
+
+    - sensor.entryway_sensor_temperature
+    - sensor.middle_floor_sensor_temperature
+    - sensor.top_floor_sensor_temperature
+    - sensor.kitchen_sensor_temperature
+
+    - sensor.entryway_sensor_light_level
+    - sensor.middle_floor_sensor_light_level
+    - sensor.top_floor_sensor_light_level
+    - sensor.kitchen_sensor_light_level
+
+    - input_boolean.away_mode
+    - input_boolean.night_mode
+    - input_boolean.cinema_mode
+    - input_boolean.motion_disable
+    - input_boolean.visitor_mode
+
+    - input_boolean.day_phase_morning
+    - input_boolean.day_phase_day
+    - input_boolean.day_phase_evening
+    - input_boolean.day_phase_night
+
+    - light.bedroom
+    - light.dining_room
+    - light.entryway
+    - light.kitchen
+    - light.top_floor
+    - light.landing
+
+    - media_player.kitchen
+    - media_player.office
+    - media_player.bedroom
+    - media_player.living_room
+    - media_player.dining_room
