@@ -33,8 +33,8 @@ filter:
     - light.top_floor
     - light.landing
 
-    - media_player.kitchen
-    - media_player.office
-    - media_player.bedroom
-    - media_player.living_room
-    - media_player.dining_room
+    #- media_player.kitchen
+    #- media_player.office
+    #- media_player.bedroom
+    #- media_player.living_room
+    #- media_player.dining_room
