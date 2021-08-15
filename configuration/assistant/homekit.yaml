@@ -30,7 +30,7 @@ filter:
     - light.dining_room
     - light.entryway
     - light.kitchen
-    - light.top_floor
+    - light.top_landing
     - light.landing
 
     #- media_player.kitchen
