@@ -35,7 +35,20 @@ filter:
     - light.hue_color_spot_4
     - light.hue_color_spot_5
     - light.hue_color_spot_6
-    #- light.entryway
+
+#   HomeKit Controller Hue Bulds (should be straight to HUE Bridge)
+    - light.hue_color_lamp
+    - light.hue_color_lamp_2
+    - light.hue_color_lamp_3
+    - light.hue_color_lamp_4
+    - light.hue_color_lamp_5
+    - light.hue_color_lamp_6
+    - light.hue_color_lamp_7
+    - light.hue_color_lamp_8
+    - light.hue_color_lamp_9
+    - light.hue_color_lamp_10
+    - light.hue_color_lamp_11
+
     #- light.kitchen
     #- light.top_landing
     #- light.landing
