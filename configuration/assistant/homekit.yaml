@@ -27,7 +27,14 @@ filter:
     - input_boolean.day_phase_night
 
     - light.hue_bloom_2
-    #- light.dining_room
+    
+    # Kitchen Spots 
+    - light.hue_color_spot
+    - light.hue_color_spot_2
+    - light.hue_color_spot_3
+    - light.hue_color_spot_4
+    - light.hue_color_spot_5
+    - light.hue_color_spot_6
     #- light.entryway
     #- light.kitchen
     #- light.top_landing
