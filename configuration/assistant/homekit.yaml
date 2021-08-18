@@ -26,7 +26,7 @@ filter:
     - input_boolean.day_phase_evening
     - input_boolean.day_phase_night
 
-    #- light.bedroom
+    - light.hue_bloom_2
     #- light.dining_room
     #- light.entryway
     #- light.kitchen
