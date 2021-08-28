@@ -25,6 +25,7 @@ filter:
     - input_boolean.day_phase_day
     - input_boolean.day_phase_evening
     - input_boolean.day_phase_night
+    - sensor.day_phase
 
     - light.hue_bloom_2
     
