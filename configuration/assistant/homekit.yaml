@@ -33,7 +33,7 @@ filter:
     - sensor.day_phase
 
   # Hue Bloom
-    - light.hue_bloom_2
+    - light.hue_bloom
     
     # Kitchen Spots 
     - light.kitchen_spot_1
