@@ -30,27 +30,25 @@ filter:
     - light.bloom
     
     # Kitchen Spots 
-    - light.kitchen_spot_1
-    - light.kitchen_spot_2
-    - light.kitchen_spot_3
-    - light.kitchen_spot_4
-    - light.kitchen_spot_5
-    - light.kitchen_spot_6
+   # - light.kitchen_spot_1
+   # - light.kitchen_spot_2
+   # - light.kitchen_spot_3
+   # - light.kitchen_spot_4
+   # - light.kitchen_spot_5
+   # - light.kitchen_spot_6
 
 #   HomeKit Controller Hue Bulds (should be straight to HUE Bridge)
-    - light.kitchen_corner
-    - light.entryway
+    - light.kitchen
+    - light.front_door
     - light.dining_room
     - light.office
-    - light.hue_color_lamp_3
-    - light.hue_color_lamp_4
-    - light.hue_color_lamp_5
-    - light.hue_color_lamp_6
-    - light.hue_color_lamp_7
-    - light.hue_color_lamp_8
-    - light.hue_color_lamp_9
-    - light.hue_color_lamp_10
-    - light.hue_color_lamp_11
+    - light.bedroom
+    - light.landing
+    - light.top_landing
+    - light.living_room_lamp_1
+    - light.living_room_lamp_2
+    - light.living_room_lamp_3
+    - light.living_room_overhead
 
     #- light.kitchen
     #- light.top_landing
