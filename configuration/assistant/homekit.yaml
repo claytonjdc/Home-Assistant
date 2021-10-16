@@ -38,7 +38,7 @@ filter:
     - light.kitchen_spot_6
 
 #   HomeKit Controller Hue Bulds (should be straight to HUE Bridge)
-    - light.hue_color_lamp
+    - light.kitchen_corner
     - light.hue_color_lamp_2
     - light.hue_color_lamp_3
     - light.hue_color_lamp_4
