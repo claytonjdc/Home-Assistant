@@ -27,7 +27,7 @@ filter:
     - input_boolean.day_phase_night
     - sensor.day_phase
 
-    - light.hue_bloom_2
+    - light.bloom
     
     # Kitchen Spots 
     - light.kitchen_spot_1
@@ -39,7 +39,9 @@ filter:
 
 #   HomeKit Controller Hue Bulds (should be straight to HUE Bridge)
     - light.kitchen_corner
-    - light.hue_color_lamp_2
+    - light.entryway
+    - light.dining_room_main
+    - light.office_main
     - light.hue_color_lamp_3
     - light.hue_color_lamp_4
     - light.hue_color_lamp_5
