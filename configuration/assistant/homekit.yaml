@@ -40,8 +40,8 @@ filter:
 #   HomeKit Controller Hue Bulds (should be straight to HUE Bridge)
     - light.kitchen_corner
     - light.entryway
-    - light.dining_room_main
-    - light.office_main
+    - light.dining_room
+    - light.office
     - light.hue_color_lamp_3
     - light.hue_color_lamp_4
     - light.hue_color_lamp_5
