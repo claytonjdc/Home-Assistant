@@ -16,7 +16,7 @@ node_red_watchdo:
       - service: hassio.addon_restart
         data:
           addon: a0d7b954_nodered
-      - service: notify.mobile_app_bones
+      - service: notify.mobile_app_jphone
         data:
           title: "System Monitoring"
           message: "Restarting"

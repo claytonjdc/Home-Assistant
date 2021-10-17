@@ -5,7 +5,7 @@ build_ci:
     - platform: homeassistant
       event: start
     action:
-    - service: notify.mobile_app_bones
+    - service: notify.mobile_app_jphone
       data:
         title: "System Monitoring"
         message: "Online"
@@ -22,7 +22,7 @@ build_ci:
     - platform: homeassistant
       event: shutdown
     action:
-    - service: notify.mobile_app_bones
+    - service: notify.mobile_app_jphone
       data:
         title: "System Monitoring"
         message: "Restarting"
@@ -38,7 +38,7 @@ build_ci:
       from: 'started'
       to: 'failed'
     action:
-    - service: notify.mobile_app_bones
+    - service: notify.mobile_app_jphone
       data:
         title: "System Monitoring"
         message: "Build Failed"
@@ -55,7 +55,7 @@ build_ci:
       from: 'started'
       to: 'passed'
     action:
-    - service: notify.mobile_app_bones
+    - service: notify.mobile_app_jphone
       data:
         title: "System Monitoring"
         message: "Build Passed"
