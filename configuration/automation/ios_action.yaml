@@ -1,3 +1,16 @@
+  - alias: "Action Turn On Visitor Mode"
+    initial_state: true
+    trigger:
+      - platform: event
+        event_type: ios.action_fired
+        event_data:
+          actionName: 'Allow Visitors'
+    action:
+      - service: input_boolean.turn_on
+        data: {}
+        target:
+          entity_id: input_boolean.visitor_mode
+
 - alias: "Action Motion Disable On"
   initial_state: false
   trigger:
@@ -7,4 +20,4 @@
         actionName: 'Disable Motion'
   action:
     service: input_boolean.turn_on
-    entity_id: input_boolean.motion_disable
+      entity_id: input_boolean.motion_disable
