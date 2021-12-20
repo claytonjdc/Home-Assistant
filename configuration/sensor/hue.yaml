@@ -5,22 +5,22 @@
     kitchen_light:
       friendly_name: 'Kitchen Light'
       unit_of_measurement: Lux
-      value_template: '{{ states.sensor.kitchen_sensor_light_level.attributes.lightlevel }}'
+      value_template: '{{ states.sensor.kitchen_sensor_light_level.attributes.light_level }}'
 
     entryway_light:
       friendly_name: 'Entryway Light'
       unit_of_measurement: Lux
-      value_template: '{{ states.sensor.entryway_sensor_light_level.attributes.lightlevel }}'
+      value_template: '{{ states.sensor.entryway_sensor_light_level.attributes.light_level }}'
   
     middle_floor_light:
       friendly_name: 'Middle Floor Light'
       unit_of_measurement: Lux
-      value_template: '{{ states.sensor.middle_floor_sensor_light_level.attributes.lightlevel }}'
+      value_template: '{{ states.sensor.middle_floor_sensor_light_level.attributes.light_level }}'
 
     top_floor_light:
       friendly_name: 'Top Floor Light'
       unit_of_measurement: Lux
-      value_template: '{{ states.sensor.top_floor_sensor_light_level.attributes.lightlevel }}'
+      value_template: '{{ states.sensor.top_floor_sensor_light_level.attributes.light_level }}'
 
     # top_floor_temperature:
     #   friendly_name: 'Top Floor Temperature'
