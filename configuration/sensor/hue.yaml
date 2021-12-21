@@ -1,5 +1,3 @@
-#- platform: huesensor
-
 - platform: template
   sensors:
     kitchen_light:
@@ -21,8 +19,3 @@
       friendly_name: 'Top Floor Light'
       unit_of_measurement: Lux
       value_template: '{{ states.sensor.top_floor_sensor_light_level.attributes.light_level }}'
-
-    # top_floor_temperature:
-    #   friendly_name: 'Top Floor Temperature'
-    #   unit_of_measurement: °C
-    #   value_template: '{{ states.binary_sensor.top_floor_sensor_motion.attributes.temperature }}'
