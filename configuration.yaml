@@ -26,22 +26,22 @@ hue:
     allow_unreachable: false
     allow_hue_groups: true
 ios:
-webostv:
-  host: 192.168.0.124
-  name: LG TV
+#webostv:
+#  host: 192.168.0.124
+#  name: LG TV
 homekit:
   !include configuration/assistant/homekit.yaml
 mobile_app:
 my:
 
 sun:
-updater:
-  include_used_components: true
+#updater:
+#  include_used_components: true
 
 # History
 history:
 recorder:
-  purge_interval: 1
+#  purge_interval: 1
   purge_keep_days: 14
   exclude:
     entities:
