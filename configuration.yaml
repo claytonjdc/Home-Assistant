@@ -79,7 +79,7 @@ tts:
 
 # Device Tracking
 zone:
-  - name: Home
+  - name: !secret zone_home_name
     latitude: !secret zone_home_lat
     longitude: !secret zone_home_long
     radius: 250
@@ -88,6 +88,11 @@ zone:
     latitude: !secret zone_work_lat
     longitude: !secret zone_work_long
     radius: 500
+  
+  - name: !secret zone_home2_name
+    latitude: !secret zone_home2_lat
+    longtitude: !secret zone_home2_long
+    radius: 250
 
 #http:
   # Uncomment this to add a password (recommended!)
