@@ -1,5 +1,5 @@
 homeassistant:
-  name: Home
+  name: !secret zone_home_name
   latitude: !secret zone_home_lat
   longitude: !secret zone_home_long
   elevation: 110
@@ -79,7 +79,7 @@ tts:
 
 # Device Tracking
 zone:
-  - name: Truro
+  - name: !secret zone_home_name
     latitude: !secret zone_home_lat
     longitude: !secret zone_home_long
     radius: 250
