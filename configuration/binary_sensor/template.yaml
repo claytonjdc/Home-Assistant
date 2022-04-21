@@ -5,6 +5,7 @@
       value_template: >
         {{ 
           states.device_tracker.jphone.state == "home" or
+          states.device_tracker.jophone.state == "home" or
           states.sensor.recent_motion.state|float > 0
         }}
     
