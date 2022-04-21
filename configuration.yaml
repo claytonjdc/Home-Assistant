@@ -91,7 +91,7 @@ zone:
   
   - name: !secret zone_home2_name
     latitude: !secret zone_home2_lat
-    longtitude: !secret zone_home2_long
+    longitude: !secret zone_home2_long
     radius: 250
 
 #http:
