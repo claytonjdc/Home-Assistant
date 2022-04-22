@@ -30,7 +30,7 @@ ios:
 #  host: 192.168.0.124
 #  name: LG TV
 homekit:
-  !include configuration/assistant/homekit.yaml
+#  !include configuration/assistant/homekit.yaml
 mobile_app:
 my:
 

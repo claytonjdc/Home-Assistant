@@ -1,3 +1,4 @@
+# is not being called in configuation.yaml to attempt auto setup installation
 filter:
   include_entities:
     - binary_sensor.entryway_sensor_motion
