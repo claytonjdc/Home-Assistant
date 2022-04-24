@@ -4,3 +4,10 @@
     Accept: application/vnd.travis-ci.2+json
   value_template: '{{ value_json.builds[0].state }}'
   name: 'Travis Build Status'
+
+- platform: template
+  sensors:
+    count_lights_on:
+      friendly_name: "Lights On"
+      unit_of_measurement: ''
+      value_template: "{{ states.light | selectattr('state', 'eq', 'on') | list | count }}"
