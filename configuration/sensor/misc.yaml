@@ -9,5 +9,21 @@
   sensors:
     count_lights_on:
       friendly_name: "Lights On"
-      unit_of_measurement: ''
-      value_template: "{{ states.light | selectattr('state', 'eq', 'on') | list | count }}"
+      unit_of_measurement: "Count"
+       value_template: >
+        {{ states.light
+            | selectattr('state', 'eq', 'on')
+            | rejectattr('attributes.is_hue_group')
+            | list 
+            | count
+        }}
+    rooms_on:
+      friendly_name: "Rooms On"
+      unit_of_measurement: "Count"
+      value_template: >
+        {{ states.light
+            | selectattr('state', 'eq', 'on')
+            | selectattr('attributes.is_hue_group')
+            | list 
+            | count
+        }}
