@@ -9,7 +9,7 @@
   sensors:
     lights_on:
       friendly_name: "Lights On"
-      unit_of_measurement: "Count"
+      unit_of_measurement: ''
       value_template: >
         {{ states.light
             | selectattr('state', 'eq', 'on')
