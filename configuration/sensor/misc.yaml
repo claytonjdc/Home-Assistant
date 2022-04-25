@@ -7,10 +7,10 @@
 
 - platform: template
   sensors:
-    count_lights_on:
+    lights_on:
       friendly_name: "Lights On"
       unit_of_measurement: "Count"
-       value_template: >
+      value_template: >
         {{ states.light
             | selectattr('state', 'eq', 'on')
             | rejectattr('attributes.is_hue_group')
